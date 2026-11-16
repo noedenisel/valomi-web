@@ -1,265 +1,168 @@
-<!DOCTYPE html>
-<html lang="es-AR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Informe VaLoMi N.º 1: Seguridad en La Matanza, qué dicen los datos oficiales (octubre 2026)</title>
-<meta name="description" content="Resumen para vecinos y vecinas con datos oficiales del Ministerio Público bonaerense y del Ministerio de Seguridad de la Nación sobre causas penales, delitos registrados y homicidios en La Matanza.">
-<style>
-.vv{--ink:#1f2933;--muted:#52606d;--line:#d9e2ec;--soft:#f0f4f8;--accent:#0b5cad;--accent-soft:#e3eefb;--warn:#8a5a00;--warn-soft:#fff6e0;
- font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.55;font-size:17px;max-width:760px;margin:0 auto;padding:24px 18px}
-.vv *{box-sizing:border-box}
-.vv h1{font-size:1.75em;line-height:1.2;margin:0 0 .3em}
-.vv h2{font-size:1.3em;margin:1.8em 0 .5em;padding-top:.2em;border-top:2px solid var(--line)}
-.vv h3{font-size:1.05em;margin:1.2em 0 .3em}
-.vv p{margin:.5em 0}
-.vv .vv-kicker{text-transform:uppercase;letter-spacing:.06em;font-size:.78em;color:var(--accent);font-weight:700;margin:0}
-.vv .vv-lead{font-size:1.08em;color:var(--muted)}
-.vv .vv-note{background:var(--soft);border-radius:8px;padding:12px 14px;font-size:.92em;margin:14px 0}
-.vv .vv-box{background:var(--accent-soft);border-left:5px solid var(--accent);border-radius:8px;padding:14px 16px;margin:16px 0}
-.vv .vv-box.warn{background:var(--warn-soft);border-left-color:#e0a100}
-.vv .vv-box h3{margin-top:0}
-.vv ol.vv-ideas{padding-left:1.3em;margin:.4em 0}
-.vv ol.vv-ideas li{margin:.45em 0}
-.vv .vv-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:14px 0}
-.vv .vv-card{border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-.vv .vv-card .n{font-size:1.6em;font-weight:800;color:var(--accent);line-height:1.1}
-.vv .vv-card .t{font-size:.9em;color:var(--muted)}
-.vv table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.93em}
-.vv th,.vv td{text-align:left;padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-.vv th{background:var(--soft);font-weight:700}
-.vv td.num,.vv th.num{text-align:right;white-space:nowrap}
-.vv .up{color:#b42318;font-weight:700}
-.vv .down{color:#067647;font-weight:700}
-.vv .vv-chart{margin:12px 0 4px}
-.vv .vv-bar-row{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:.92em}
-.vv .vv-bar-year{width:3em;color:var(--muted)}
-.vv .vv-bar-track{flex:1;background:var(--soft);border-radius:4px;height:20px;overflow:hidden}
-.vv .vv-bar{display:block;height:100%;background:#9fb3c8;border-radius:4px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.vv .vv-bar-hi{background:#b42318}
-.vv .vv-bar-last{background:var(--accent)}
-.vv .vv-bar-val{width:4.5em;text-align:right;font-variant-numeric:tabular-nums}
-.vv .vv-caption{font-size:.85em;color:var(--muted)}
-.vv ul{padding-left:1.2em}
-.vv li{margin:.3em 0}
-.vv a{color:var(--accent)}
-.vv .vv-sources li{font-size:.9em}
-.vv .vv-foot{font-size:.85em;color:var(--muted);border-top:1px solid var(--line);margin-top:2em;padding-top:.8em}
-.vv .vv-divider{margin:2.2em 0 .6em;padding:14px 16px;border:2px dashed #c07a00;border-radius:10px;background:var(--warn-soft)}
-.vv .vv-divider p{margin:.3em 0}
-.vv .vv-divider .big{font-weight:800;font-size:1.05em;color:var(--warn)}
-.vv h2.vv-nooficial{border-top:none;margin-top:.6em;color:var(--warn)}
-.vv .vv-nv{border:1px dashed #c07a00;border-radius:10px;padding:12px 14px;margin:14px 0;background:#fffdf6}
-.vv .vv-nv h3{margin:.1em 0 .4em}
-.vv .vv-tag{display:inline-block;font-size:.75em;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:#fff;background:#b45309;border-radius:4px;padding:2px 7px;margin-bottom:6px}
-.vv .vv-tag.mun{background:#6b7280}
-.vv .vv-tag.ok{background:#067647}
-.vv .vv-pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0}
-.vv .vv-pair>div{border-radius:8px;padding:10px 12px;font-size:.93em}
-.vv .vv-pair .no{background:var(--warn-soft)}
-.vv .vv-pair .si{background:#e7f6ec}
-.vv .vv-pair .lbl{font-weight:800;font-size:.8em;text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:3px}
-.vv .vv-pair .no .lbl{color:var(--warn)}
-.vv .vv-pair .si .lbl{color:#067647}
-.vv .vv-src{font-size:.82em;color:var(--muted);margin-top:4px}
-.vv .vv-bar-nv{background:repeating-linear-gradient(45deg,#e0a100 0 6px,#fff1c2 6px 12px)}
-.vv .vv-part{font-size:.8em;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#067647;margin:1.8em 0 -1.2em}
-@media (max-width:560px){.vv .vv-pair{grid-template-columns:1fr}}
-@media print{
- .vv .vv-nv,.vv .vv-divider,.vv .vv-pair{break-inside:avoid}
- .vv .vv-divider,.vv .vv-part{break-after:avoid}
- .vv h2.vv-nooficial{break-before:avoid}
- @page{size:A4;margin:12mm 13mm}
- .vv{font-size:10.8pt;max-width:none;padding:0}
- .vv h2{break-after:avoid;margin-top:1.2em}
- .vv h3{break-after:avoid}
- .vv table,.vv .vv-box,.vv .vv-cards,.vv .vv-chart,.vv .vv-card{break-inside:avoid}
- .vv *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-}
-</style>
-</head>
-<body>
-<article class="vv">
-
-<p class="vv-kicker">Informe VaLoMi N.º 1 · Octubre 2026</p>
-<h1>Seguridad en La Matanza: qué dicen los datos oficiales</h1>
-<p class="vv-lead">Un resumen claro, con números oficiales y sus fuentes, para que cualquier vecino o vecina pueda entender cómo está la seguridad en nuestro partido.</p>
-
-<div class="vv-note">
-<strong>Antes de leer, dos aclaraciones.</strong><br>
-1. Los datos son de <strong>todo el partido de La Matanza</strong>. Ningún organismo oficial publica cifras por barrio, así que no hay números propios de Lomas del Mirador, Ramos Mejía o San Justo.<br>
-2. Los datos oficiales más nuevos son de <strong>todo el año 2025</strong>. Todavía no hay cifras oficiales publicadas de 2026.<br>3. El informe tiene <strong>dos partes separadas</strong>: primero, los <strong>datos oficiales verificados</strong> (secciones 1 a 4); después, en un recuadro aparte, <strong>datos que maneja VaLoMi y que todavía no tienen respaldo oficial público</strong> (sección 5).
-</div>
-
+<article class="vv"><h1 id="seguridad-en-la-matanza-qué-muestran-los-datos-oficiales-y-qué-información-falta">Seguridad en La Matanza: qué muestran los datos oficiales y qué información falta</h1>
+<p class="vv-note"><strong>Informe VaLoMi N.º 1 · Informe de referencia · Octubre de 2026</strong><br>
+<strong>Cobertura:</strong> partido de La Matanza, provincia de Buenos Aires.<br>
+<strong>Corte de información del documento original:</strong> 29 de octubre de 2026.</p>
+<p class="vv-lead"><strong>Bajada.</strong> Las estadísticas de 2025 muestran una disminución de las causas penales iniciadas y de los robos registrados respecto de 2024. Sin embargo, La Matanza mantiene una tasa de homicidios elevada y persisten vacíos de información sobre la seguridad en cada localidad. Este informe explica qué miden las cifras oficiales, qué no permiten concluir y qué información solicita VaLoMi que se haga pública.</p>
 <div class="vv-box">
-<h3>En pocas palabras</h3>
-<ol class="vv-ideas">
-<li><strong>En 2025 bajaron las causas penales y los robos.</strong> La fiscalía de La Matanza abrió 12 % menos causas que en 2024, y la policía registró 26 % menos robos.</li>
-<li><strong>Los homicidios siguen siendo el problema más grave.</strong> La Matanza tiene la tasa de homicidios más alta de la provincia entre los departamentos judiciales: 8 cada 100.000 habitantes, cuando el promedio provincial es 4,6.</li>
-<li><strong>Somos el partido con más hechos porque somos el más poblado.</strong> Si se mira cuántas causas hay por cada habitante, La Matanza está por debajo del promedio provincial.</li>
-<li><strong>Faltan datos.</strong> No hay cifras oficiales por barrio, de 2026 ni sobre patrulleros o licencias médicas de la policía en el distrito. VaLoMi maneja sus propias cifras (sección 5), pero no son oficiales. Pedimos que los datos se publiquen.</li>
+<h3 id="las-principales-conclusiones">Las principales conclusiones</h3>
+<ul>
+<li>
+<strong>Menos causas penales iniciadas:</strong> el Ministerio Público bonaerense informó 84.396 en 2025, frente a 95.910 en 2024: 11.514 menos, aproximadamente un 12 % de descenso.</li>
+<li>
+<strong>Menos robos registrados:</strong> el Sistema Nacional de Información Criminal (SNIC) informó 17.434 hechos en 2025, frente a 23.682 en 2024. La variación publicada de la tasa fue de −26,4 %.</li>
+<li>
+<strong>Homicidios: una situación preocupante:</strong> según el Ministerio Público, hubo 147 víctimas de homicidio doloso en 2025 y una tasa de 8,02 por cada 100.000 habitantes, frente a 4,63 para el conjunto provincial. La Matanza registró la tasa más alta entre los departamentos judiciales bonaerenses.</li>
+<li>
+<strong>No hay una estadística barrial equivalente:</strong> los datos utilizados corresponden al partido o al departamento judicial, no específicamente a Lomas del Mirador, Ramos Mejía, San Justo u otras localidades.</li>
+<li>
+<strong>Las cifras oficiales no agotan el problema:</strong> los hechos que no ingresan a los sistemas de registro no pueden medirse con esas bases. Las alertas vecinales permiten identificar situaciones para investigar, pero no reemplazan una estadística oficial.</li>
+</ul>
+</div>
+<h2 id="cómo-leer-los-números-sin-sacar-conclusiones-equivocadas">Cómo leer los números sin sacar conclusiones equivocadas</h2>
+<p><strong>Una causa penal iniciada no es un delito probado.</strong> Es una investigación que abre una fiscalía a partir de una denuncia, una actuación policial u otra noticia de un posible hecho delictivo. Puede incluir más de un episodio o terminar sin que se acredite un delito. Las estadísticas de causas las publica el Ministerio Público de la Provincia de Buenos Aires.</p>
+<p><strong>Un delito registrado por el SNIC tampoco equivale a todos los delitos que ocurren.</strong> El SNIC reúne hechos incorporados a los registros de las fuerzas de seguridad. Puede incluir actuaciones de oficio y hechos denunciados; no capta necesariamente todos los episodios que ocurren en la comunidad.</p>
+<p><strong>Las tasas permiten comparar territorios de distinto tamaño.</strong> Una tasa de 8 homicidios por 100.000 habitantes no significa ocho homicidios en todo el distrito: representa la relación entre víctimas y población. Como referencia demográfica, el Censo 2022 registró 1.841.247 habitantes en el partido de La Matanza.</p>
+<p>No corresponde sumar las causas penales y los hechos del SNIC ni considerar que sus diferencias se deben a un error: son sistemas con criterios de registro y unidades de análisis distintos.</p>
+<h2 id="las-causas-penales-bajaron-en-2025">1. Las causas penales bajaron en 2025</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Año</th>
+<th class="num">Causas penales iniciadas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2018</td>
+<td class="num">73.354</td>
+</tr>
+<tr class="even">
+<td>2019</td>
+<td class="num">80.672</td>
+</tr>
+<tr class="odd">
+<td>2020</td>
+<td class="num">67.476</td>
+</tr>
+<tr class="even">
+<td>2021</td>
+<td class="num">69.636</td>
+</tr>
+<tr class="odd">
+<td>2022</td>
+<td class="num">74.691</td>
+</tr>
+<tr class="even">
+<td>2023</td>
+<td class="num">88.327</td>
+</tr>
+<tr class="odd">
+<td>2024</td>
+<td class="num">95.910</td>
+</tr>
+<tr class="even">
+<td>2025</td>
+<td class="num">84.396</td>
+</tr>
+</tbody>
+</table>
+<p>Fuente: series y comparativos del Ministerio Público bonaerense. El dato de 2024 es el máximo de la serie 2018-2025 reproducida en el documento original.</p>
+<p>En promedio, las 84.396 causas iniciadas durante 2025 equivalen a unas <strong>231 por día</strong>; en 2024 fueron aproximadamente <strong>262 por día</strong>. En el mismo período, las causas por robo con arma pasaron de 8.639 a 5.660, una reducción aproximada del <strong>34,5 %</strong>.</p>
+<p>Estas cifras describen la actividad registrada por el sistema de justicia. Por sí solas no explican qué ocurrió en cada barrio ni permiten medir la totalidad de los hechos no denunciados.</p>
+<h2 id="delitos-registrados-bajas-y-aumentos-dentro-del-mismo-período">2. Delitos registrados: bajas y aumentos dentro del mismo período</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Indicador SNIC</th>
+<th class="num">2024</th>
+<th class="num">2025</th>
+<th class="num">Variación publicada de la tasa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Robos (hechos)</td>
+<td class="num">23.682</td>
+<td class="num">17.434</td>
+<td class="num">−26,4 %</td>
+</tr>
+<tr class="even">
+<td>Hurtos (hechos)</td>
+<td class="num">9.014</td>
+<td class="num">7.730</td>
+<td class="num">−14,3 %</td>
+</tr>
+<tr class="odd">
+<td>Homicidios dolosos (víctimas)</td>
+<td class="num">152</td>
+<td class="num">149</td>
+<td class="num">−2,0 %</td>
+</tr>
+<tr class="even">
+<td>Lesiones dolosas (víctimas)</td>
+<td class="num">4.332</td>
+<td class="num">4.441</td>
+<td class="num">+2,5 %</td>
+</tr>
+<tr class="odd">
+<td>Violaciones (víctimas)</td>
+<td class="num">211</td>
+<td class="num">253</td>
+<td class="num">+19,8 %</td>
+</tr>
+</tbody>
+</table>
+<p><em>La variación reproducida corresponde a las tasas por cada 100.000 habitantes publicadas por el SNIC. Los indicadores no tienen siempre la misma unidad: algunos cuentan hechos y otros, víctimas.</em></p>
+<p>Se observa una baja importante en robos y hurtos registrados. Al mismo tiempo, aumentaron las víctimas registradas de lesiones dolosas y de violación. El aumento de registros de una categoría puede responder a cambios en la cantidad de hechos, en las denuncias o en las prácticas de registro; los datos disponibles, por sí solos, no permiten atribuir una causa.</p>
+<p>Un hurto es, en términos generales, el apoderamiento de un bien ajeno sin violencia sobre las personas ni fuerza en las cosas; no debe confundirse técnicamente con un robo.</p>
+<h2 id="homicidios-dos-fuentes-oficiales-dos-resultados">3. Homicidios: dos fuentes oficiales, dos resultados</h2>
+<p>Según el <strong>Ministerio Público bonaerense</strong>, La Matanza registró <strong>147 víctimas de homicidio doloso en 2025</strong>, frente a 155 en 2024. La tasa de 2025 fue de <strong>8,02 por cada 100.000 habitantes</strong>, aproximadamente 1,7 veces la tasa provincial de <strong>4,63</strong>. También había encabezado la comparación de departamentos judiciales en 2024, con una tasa de 8,46.</p>
+<p>En cambio, el <strong>SNIC</strong> informa <strong>149 víctimas en 2025</strong>, frente a 152 en 2024. Las cifras no deben mezclarse: provienen de sistemas oficiales diferentes, con procesos propios de registro y revisión.</p>
+<p><strong>Conclusión:</strong> aunque ambos registros muestran una reducción interanual moderada, la comparación territorial de la Procuración coloca a La Matanza en la situación más desfavorable de los departamentos judiciales bonaerenses por tasa de homicidios dolosos.</p>
+<h2 id="la-matanza-es-el-distrito-más-inseguro-de-la-provincia">4. ¿La Matanza es el distrito más inseguro de la provincia?</h2>
+<p>Una respuesta responsable depende del indicador utilizado:</p>
+<ul>
+<li>
+<strong>Homicidios por habitante:</strong> según el Ministerio Público, el departamento judicial de La Matanza presentó la tasa más alta en 2024 y 2025.</li>
+<li>
+<strong>Cantidad absoluta de determinados hechos registrados:</strong> el partido concentra los mayores volúmenes provinciales de varias categorías del SNIC, algo que debe leerse junto con su gran población.</li>
+<li>
+<strong>Causas iniciadas por habitante:</strong> en 2025 registró <strong>4.606 por cada 100.000 habitantes</strong>, frente a <strong>5.807</strong> en el total provincial; ocupó el puesto 15 entre 20 departamentos judiciales, según el comparativo utilizado.</li>
+<li>
+<strong>Delitos totales registrados por habitante:</strong> el documento base señala que su tasa es inferior al promedio del conurbano, sobre la base de cálculos propios con datos SNIC. Esta comparación debe presentarse como un cálculo de VaLoMi, no como un ranking oficial ya publicado.</li>
+</ul>
+<p>Por eso, una afirmación general como «La Matanza está primera en todo» no es fiel al conjunto de las estadísticas. Tampoco sería correcto usar la baja de robos para minimizar el problema de los homicidios o las situaciones denunciadas por vecinos.</p>
+<h2 id="afirmaciones-públicas-que-requieren-documentación-adicional" class="vv-nooficial">5. Afirmaciones públicas que requieren documentación adicional</h2>
+<div class="vv-nv">
+<p>Las siguientes cifras fueron recogidas en publicaciones, entrevistas o comunicaciones institucionales. <strong>No cuentan, en el material de base, con una serie oficial o un inventario público que permita validarlas de manera independiente.</strong> Se mencionan para identificar la información pendiente, no para presentarlas como hechos acreditados.</p>
+<h3 id="causas-por-día-durante-2026">«287 causas por día» durante 2026</h3>
+<p>En publicaciones de la cuenta <span class="citation" data-cites="vecinosenalerta">@vecinosenalerta</span> de julio y agosto de 2026 se difundió una cifra de <strong>287 causas penales por día</strong>, atribuida al Ministerio Público. El documento original no aporta un informe oficial de 2026 que la confirme. Como comparación, los promedios calculados con los datos oficiales de 2024 y 2025 fueron de 262 y 231 causas diarias, respectivamente.</p>
+<p>Si se mantuviera hipotéticamente durante 365 días, el promedio de 287 equivaldría a 104.755 causas anuales. <strong>Esa proyección matemática no constituye un total observado ni un récord oficial de 2026.</strong> VaLoMi solicita conocer la fuente y el período exacto de la cifra difundida.</p>
+<h3 id="cuántos-patrulleros-están-efectivamente-disponibles">Cuántos patrulleros están efectivamente disponibles</h3>
+<p>En una entrevista de junio de 2025 se afirmó que, de 990 móviles mencionados, menos de 400 estarían operativos. La afirmación no viene acompañada, en el documento, por un inventario público auditado. En agosto de 2026, el Gobierno bonaerense informó una entrega de <strong>40 patrulleros y 10 motocicletas</strong> a La Matanza y se refirió también a una cifra acumulada de más de 1.150 vehículos entregados, sin que eso constituya un inventario de móviles operativos en La Matanza. <strong>Una entrega no informa, por sí sola, cuántos móviles están funcionando actualmente en el distrito.</strong></p>
+<h3 id="licencias-médicas-del-personal-policial">Licencias médicas del personal policial</h3>
+<p>En esa misma entrevista se mencionaron porcentajes de <strong>20 % a nivel provincial y 25 % en La Matanza</strong>. Por otro lado, en octubre de 2026 se publicó una declaración del ministro bonaerense que ubicaba las licencias en <strong>5 % a 7 % del personal provincial</strong>. Se trata de afirmaciones de distinto momento y alcance, no de una serie estadística comparable. No se cuenta aquí con el detalle oficial correspondiente a La Matanza.</p>
+<h3 id="población-de-lomas-del-mirador">Población de Lomas del Mirador</h3>
+<p>Circula la cifra de <strong>67.341 habitantes</strong> atribuida a 2022. El material original no identifica el cuadro censal oficial que la respalde. Por esa razón, VaLoMi no la emplea para calcular tasas de delitos a escala local.</p>
+<h3 id="cámaras-luminarias-y-paradas-seguras">Cámaras, luminarias y paradas seguras</h3>
+<p>En distintas comunicaciones, el Municipio anunció <strong>más de 6.000 cámaras</strong>, <strong>más de 40.000 luminarias LED</strong> y <strong>más de 1.200 o más de 1.500 paradas seguras</strong>, según la publicación consultada. Las cifras comunicadas sobre paradas seguras no coinciden. En la documentación examinada no aparece un inventario público desagregado por localidad que indique ubicación, estado operativo, mantenimiento y fecha de actualización.</p>
+<p><strong>El problema no es solo cuántos equipos se anuncian, sino cuántos funcionan, dónde están y qué resultados permiten evaluar.</strong></p>
+</div>
+<h2 id="qué-información-propone-solicitar-valomi">6. Qué información propone solicitar VaLoMi</h2>
+<p>El documento original propone impulsar pedidos formales de acceso a la información pública. <strong>No acredita que estos pedidos ya hayan sido presentados.</strong> Las prioridades son:</p>
+<ol type="1">
+<li>Cantidad, ubicación y estado operativo de cámaras y paradas seguras por localidad.</li>
+<li>Reclamos por luminarias fuera de servicio en Lomas del Mirador y tiempos de reparación.</li>
+<li>Presupuesto de seguridad ejecutado, programas financiados y distribución territorial.</li>
+<li>Dotación policial disponible y móviles operativos por dependencia, con resguardos de seguridad cuando correspondan.</li>
+<li>Cantidad mensual de investigaciones penales iniciadas en 2026 y desagregación geográfica disponible.</li>
+<li>Criterios de elaboración, alcance y fecha de las cifras difundidas públicamente.</li>
 </ol>
-</div>
-
-<p class="vv-part">Parte 1 · Datos oficiales verificados</p>
-<h2>Primero: causa penal no es lo mismo que delito</h2>
-<p>En este informe usamos dos tipos de datos oficiales. Miden cosas distintas.</p>
-<ul>
-<li><strong>Causas penales iniciadas</strong> (las publica el Ministerio Público bonaerense, es decir, las fiscalías). Es cada investigación que abre una fiscalía, por una denuncia o por la propia policía. Una causa no prueba que hubo un delito: puede cerrarse sin delito comprobado.</li>
-<li><strong>Delitos registrados</strong> (los publica el Ministerio de Seguridad de la Nación, en el sistema SNIC). Es cada hecho que la policía cargó como posible delito.</li>
-</ul>
-<p>Ninguno de los dos cuenta lo que <strong>no se denuncia</strong>. Por eso los números reales pueden ser más altos.</p>
-<p><strong>¿Qué es una "tasa cada 100.000 habitantes"?</strong> Es una forma de comparar lugares de distinto tamaño. Si la tasa es 8, quiere decir que hubo 8 casos por cada 100.000 personas que viven ahí. La Matanza tiene 1.841.247 habitantes (Censo 2022).</p>
-
-<h2>1. Causas penales iniciadas: bajaron en 2025</h2>
-<div class="vv-cards">
-<div class="vv-card"><div class="n">84.396</div><div class="t">causas penales iniciadas en 2025. Son unas <strong>231 por día</strong>.</div></div>
-<div class="vv-card"><div class="n">95.910</div><div class="t">causas en 2024, el número más alto desde 2018. Unas <strong>262 por día</strong>.</div></div>
-<div class="vv-card"><div class="n">−12 %</div><div class="t">baja entre 2024 y 2025. Fue la baja más grande de los 20 departamentos judiciales de la provincia.</div></div>
-</div>
-<div class="vv-chart" role="img" aria-label="Gráfico de barras: causas penales iniciadas en La Matanza por año, de 2018 a 2025">
-<div class="vv-bar-row"><span class="vv-bar-year">2018</span><span class="vv-bar-track"><span class="vv-bar" style="width:73.4%"></span></span><span class="vv-bar-val">73.354</span></div><div class="vv-bar-row"><span class="vv-bar-year">2019</span><span class="vv-bar-track"><span class="vv-bar" style="width:80.7%"></span></span><span class="vv-bar-val">80.672</span></div><div class="vv-bar-row"><span class="vv-bar-year">2020</span><span class="vv-bar-track"><span class="vv-bar" style="width:67.5%"></span></span><span class="vv-bar-val">67.476</span></div><div class="vv-bar-row"><span class="vv-bar-year">2021</span><span class="vv-bar-track"><span class="vv-bar" style="width:69.6%"></span></span><span class="vv-bar-val">69.636</span></div><div class="vv-bar-row"><span class="vv-bar-year">2022</span><span class="vv-bar-track"><span class="vv-bar" style="width:74.7%"></span></span><span class="vv-bar-val">74.691</span></div><div class="vv-bar-row"><span class="vv-bar-year">2023</span><span class="vv-bar-track"><span class="vv-bar" style="width:88.3%"></span></span><span class="vv-bar-val">88.327</span></div><div class="vv-bar-row"><span class="vv-bar-year">2024</span><span class="vv-bar-track"><span class="vv-bar vv-bar-hi" style="width:95.9%"></span></span><span class="vv-bar-val">95.910</span></div><div class="vv-bar-row"><span class="vv-bar-year">2025</span><span class="vv-bar-track"><span class="vv-bar vv-bar-last" style="width:84.4%"></span></span><span class="vv-bar-val">84.396</span></div>
-</div>
-<p class="vv-caption">Causas penales iniciadas por año en el Departamento Judicial La Matanza. En rojo, el año más alto (2024). Fuente: Ministerio Público de la Provincia de Buenos Aires.</p>
-<p><strong>Qué significa:</strong> en 2025 la fiscalía abrió 11.514 causas menos que en 2024. Las causas por <strong>robo con arma</strong> bajaron de 8.639 a 5.660 (−34,5 %). Ojo: esto mide causas abiertas, no delitos comprobados.</p>
-
-<h2>2. Delitos registrados por la policía: qué subió y qué bajó</h2>
-<table>
-<thead><tr><th>Tipo de hecho (SNIC)</th><th class="num">2024</th><th class="num">2025</th><th class="num">Cambio*</th></tr></thead>
-<tbody>
-<tr><td>Robos (hechos)</td><td class="num">23.682</td><td class="num">17.434</td><td class="num down">−26,4 %</td></tr>
-<tr><td>Hurtos, es decir, robos sin violencia (hechos)</td><td class="num">9.014</td><td class="num">7.730</td><td class="num down">−14,3 %</td></tr>
-<tr><td>Víctimas de homicidio doloso</td><td class="num">152</td><td class="num">149</td><td class="num down">−2,0 %</td></tr>
-<tr><td>Víctimas de lesiones dolosas (golpes y heridas intencionales)</td><td class="num">4.332</td><td class="num">4.441</td><td class="num up">+2,5 %</td></tr>
-<tr><td>Víctimas de violación (abuso sexual con acceso carnal)</td><td class="num">211</td><td class="num">253</td><td class="num up">+19,8 %</td></tr>
-</tbody>
-</table>
-<p class="vv-caption">*El cambio es el de la tasa cada 100.000 habitantes, como lo publica el SNIC. Fuente: Ministerio de Seguridad de la Nación, informe SNIC Provincia de Buenos Aires 2025.</p>
-<p><strong>Qué significa:</strong> los robos bajaron fuerte. En <strong>todos los meses de 2025</strong> hubo menos robos que en el mismo mes de 2024. En cambio, subieron las lesiones y, sobre todo, las violaciones registradas. Un aumento registrado puede deberse a más hechos o a que más víctimas se animan a denunciar: el dato solo no permite saberlo.</p>
-
-<h2>3. Homicidios: la tasa más alta de la provincia</h2>
-<div class="vv-cards">
-<div class="vv-card"><div class="n">147</div><div class="t">víctimas de homicidio doloso en 2025 (155 en 2024), según las fiscalías.</div></div>
-<div class="vv-card"><div class="n">8,02</div><div class="t">homicidios cada 100.000 habitantes en 2025. La más alta entre los departamentos judiciales.</div></div>
-<div class="vv-card"><div class="n">4,63</div><div class="t">es la tasa del total de la provincia. La de La Matanza es 1,7 veces más alta.</div></div>
-</div>
-<p><strong>Qué significa:</strong> la cantidad de homicidios bajó un poco entre 2024 y 2025, pero La Matanza sigue primera en tasa de homicidios. También lo fue en 2024, con 8,46.</p>
-<p class="vv-caption">¿Por qué las fiscalías dicen 147 víctimas y el SNIC 149? Porque cuentan distinto: las fiscalías revisan cada causa una por una, y el SNIC usa los registros policiales. Las dos son fuentes oficiales.</p>
-
-<h2>4. ¿La Matanza está "al tope" de la provincia?</h2>
-<p>Depende de qué se mire. Es importante decirlo con precisión.</p>
-<table>
-<thead><tr><th>Indicador</th><th>¿Primera?</th><th>Dato</th></tr></thead>
-<tbody>
-<tr><td>Tasa de homicidios (cada 100.000 habitantes)</td><td><strong>Sí</strong></td><td>La más alta entre los departamentos judiciales en 2024 y 2025 (fiscalías).</td></tr>
-<tr><td>Cantidad total de robos, hurtos, homicidios y violaciones</td><td><strong>Sí</strong></td><td>Es el partido con más casos de la provincia (SNIC 2025), porque es el más poblado.</td></tr>
-<tr><td>Causas penales por habitante</td><td><strong>No</strong></td><td>4.606 cada 100.000 habitantes en 2025. Puesto 15 de 20, por debajo del total provincial (5.807).</td></tr>
-<tr><td>Delitos totales por habitante</td><td><strong>No</strong></td><td>No es la primera. Por habitante está por debajo del promedio del conurbano (SNIC 2025).</td></tr>
-</tbody>
-</table>
-
-<div class="vv-divider">
-<p class="big">Parte 2 · Atención: a partir de acá, datos NO oficiales</p>
-<p>Esta sección reúne cifras que maneja VaLoMi o que circulan en declaraciones públicas. <strong>No tienen respaldo oficial público ni verificación oficial.</strong> No deben leerse como hechos confirmados. Al lado de cada una mostramos qué es lo único oficial que se pudo encontrar.</p>
-</div>
-<h2 class="vv-nooficial">5. Lo que maneja VaLoMi y todavía no tiene respaldo oficial público</h2>
-
-<div class="vv-nv">
-<span class="vv-tag">Fuente no oficial – sin verificación oficial</span>
-<h3>"287 causas por día" en 2026</h3>
-<div class="vv-pair">
-<div class="no"><span class="lbl">Según VaLoMi</span>287 por día en 2026, "según el MPF" (Ministerio Público Fiscal). VaLoMi lo presentó como un "nuevo récord".</div>
-<div class="si"><span class="lbl">Lo oficial publicado</span>El Ministerio Público <strong>no publicó datos de 2026</strong>. El récord oficial publicado es de <strong>2024: 262 causas por día</strong>. En <strong>2025 fueron 231 por día</strong>.</div>
-</div>
-<div class="vv-chart" role="img" aria-label="Comparación: 231 y 262 causas por día oficiales frente a 287 según VaLoMi, no oficial">
-<div class="vv-bar-row"><span class="vv-bar-year">2025</span><span class="vv-bar-track"><span class="vv-bar vv-bar-last" style="width:77.0%"></span></span><span class="vv-bar-val">231</span></div>
-<div class="vv-bar-row"><span class="vv-bar-year">2024</span><span class="vv-bar-track"><span class="vv-bar vv-bar-hi" style="width:87.3%"></span></span><span class="vv-bar-val">262</span></div>
-<div class="vv-bar-row"><span class="vv-bar-year">2026*</span><span class="vv-bar-track"><span class="vv-bar vv-bar-nv" style="width:95.7%"></span></span><span class="vv-bar-val">287*</span></div>
-</div>
-<p class="vv-caption">Causas penales iniciadas por día. Barras lisas: dato oficial (Ministerio Público). *Barra rayada: cifra de VaLoMi, no oficial y sin documento publicado.</p>
-<p><strong>Qué significa:</strong> 287 por día serían unas 104.755 causas en un año, más que el máximo oficial publicado (95.910 en 2024). Además, son causas penales iniciadas, no delitos. Si existe un documento oficial con esa cifra, pedimos que se publique.</p>
-<p class="vv-src">De dónde sale: publicaciones de @vecinosenalerta en X del 29/07/2026 (<a href="https://x.com/vecinosenalerta/status/2082468215469334769">1</a>, <a href="https://x.com/vecinosenalerta/status/2082471622363984244">2</a>) y del 02/08/2026 (<a href="https://x.com/vecinosenalerta/status/2084010660242047059">3</a>). Dato oficial: <a href="https://www.mpba.gov.ar/files/estadisticas/Comparativo%20iniciadas%202024-2025%20FCC.pdf">Ministerio Público, comparativo 2024-2025</a>.</p>
-</div>
-
-<div class="vv-nv">
-<span class="vv-tag">Fuente no oficial – sin verificación oficial</span>
-<h3>Patrulleros en La Matanza</h3>
-<div class="vv-pair">
-<div class="no"><span class="lbl">Según VaLoMi</span>"Dicen que hay 990, pero no llegan a 400" patrulleros. Lo dijo en junio de 2025.</div>
-<div class="si"><span class="lbl">Lo oficial publicado</span>La Provincia informó la entrega de <strong>40 patrulleros y 10 motos el 26/08/2026</strong>, y "más de 1.150 vehículos entregados" en total. <strong>No hay dato público</strong> de cuántos patrulleros funcionan hoy ni de cómo se reparten por localidad o comisaría.</div>
-</div>
-<p class="vv-src">De dónde sale: entrevista en <a href="https://www.cadena3.com/noticia/la-mesa-de-cafe/muerte-de-thiago-correa-criticas-a-la-falta-de-instruccion-policial_431015">Cadena 3</a>, 09/06/2025. Dato oficial: <a href="https://gba.gob.ar/comunicacion_publica/gacetillas/kicillof_entreg%C3%B3_40_patrulleros_y_10_motos_para_fortalecer_la">gacetilla</a> y <a href="https://gba.gob.ar/discursos/palabras_del_gobernador_kicillof_durante_la_entrega_de_40_patrulleros_y_10_motos">discurso</a> del Gobierno bonaerense, 26/08/2026.</p>
-</div>
-
-<div class="vv-nv">
-<span class="vv-tag">Fuente no oficial – sin verificación oficial</span>
-<h3>Policías con carpeta médica</h3>
-<div class="vv-pair">
-<div class="no"><span class="lbl">Según VaLoMi</span>El 20 % de la policía bonaerense y el 25 % en La Matanza están con carpeta médica. Lo dijo en junio de 2025.</div>
-<div class="si"><span class="lbl">Lo oficial publicado</span>La única cifra oficial es una <strong>declaración del ministro de Seguridad bonaerense del 24/10/2026</strong>: entre el <strong>5 % y el 7 %</strong> del personal de toda la provincia está de licencia médica. No hay dato publicado para La Matanza.</div>
-</div>
-<p class="vv-src">De dónde sale: entrevista en <a href="https://www.cadena3.com/noticia/la-mesa-de-cafe/muerte-de-thiago-correa-criticas-a-la-falta-de-instruccion-policial_431015">Cadena 3</a>, 09/06/2025. Dato oficial: declaración publicada por <a href="https://mi8.com.ar/carpetas-medicas-en-la-policia-advierten-que-el-personal-de-licencia-no-supera-el-7/">mi8</a>, 24/10/2026. Es una declaración, no una estadística publicada.</p>
-</div>
-
-<div class="vv-nv">
-<span class="vv-tag">Fuente no oficial – sin verificación oficial</span>
-<h3>Población de Lomas del Mirador</h3>
-<div class="vv-pair">
-<div class="no"><span class="lbl">Cifra que circula</span>67.341 habitantes (año 2022).</div>
-<div class="si"><span class="lbl">Lo oficial publicado</span>El INDEC publica la población <strong>por partido</strong> (La Matanza: 1.841.247), pero <strong>no encontramos un cuadro oficial por localidad</strong>. Por eso no usamos esta cifra para calcular tasas del barrio.</div>
-</div>
-<p class="vv-src">De dónde sale: <a href="https://es.wikipedia.org/wiki/Lomas_del_Mirador">Wikipedia, "Lomas del Mirador"</a> (sin cuadro del INDEC citado). Dato oficial por partido: <a href="https://www.indec.gob.ar/ftp/cuadros/poblacion/c2022_bsas_est_c1_2.xlsx">INDEC, Censo 2022</a>.</p>
-</div>
-
-<div class="vv-nv">
-<span class="vv-tag mun">Declaración municipal – sin inventario público verificable</span>
-<h3>Cámaras, luminarias y paradas seguras</h3>
-<div class="vv-pair">
-<div class="no"><span class="lbl">Lo que dice el Municipio</span>Más de <strong>6.000 cámaras</strong> 4K, más de <strong>40 mil luminarias</strong> LED y paradas seguras: "más de <strong>1.200</strong>" en una página y "más de <strong>1.500</strong>" en otra.</div>
-<div class="si"><span class="lbl">Lo que falta</span>Son declaraciones, <strong>sin inventario publicado por localidad</strong> ni datos de cuántas funcionan. Las dos cifras de paradas seguras <strong>no coinciden</strong> entre sí. No se puede saber cuántas hay en Lomas del Mirador.</div>
-</div>
-<p class="vv-src">De dónde sale: páginas del Municipio de La Matanza: <a href="https://www.lamatanza.gov.ar/com">Centro de Operaciones y Monitoreo</a> (6 mil cámaras, +1500 paradas), <a href="https://lamatanza.gov.ar/proteccionciudadana/paradas-seguras">Paradas seguras</a> (más de 1200) y <a href="https://www.lamatanza.gov.ar/noticias/1246/details">noticia municipal n.º 1246</a> (6000 cámaras, 1500 paradas, 40 mil luminarias).</p>
-</div>
-
-<div class="vv-box warn">
-<h3>El mensaje de esta sección</h3>
-<p>Estos datos hoy <strong>no son públicos ni se pueden verificar con una fuente oficial</strong>. No los presentamos como hechos. Pedimos que los organismos los publiquen, para que cualquier vecino pueda consultarlos.</p>
-</div>
-
-<h2>6. Lo que pedimos que se publique</h2>
-<p>Hay datos importantes para el barrio que hoy no están publicados, incluidos los de la sección 5. Proponemos hacer un <strong>seguimiento ciudadano</strong> con pedidos formales de acceso a la información pública, y contar acá las respuestas. Estas son propuestas: todavía no se presentaron.</p>
-<ul>
-<li><strong>Cámaras:</strong> cuántas hay en cada localidad, dónde están y cuántas funcionan.</li>
-<li><strong>Iluminación:</strong> cuántos reclamos por luces apagadas hubo en Lomas del Mirador y cuánto se tardó en arreglarlos.</li>
-<li><strong>Paradas seguras:</strong> el listado con su ubicación y si funcionan la cámara y el botón de alerta.</li>
-<li><strong>Presupuesto de seguridad:</strong> cuánto se gastó, en qué programas y en qué localidades.</li>
-<li><strong>Policía:</strong> cuántos móviles y cuánto personal hay disponible en cada comisaría del partido.</li>
-<li><strong>Causas de 2026:</strong> cuántas causas penales se iniciaron cada mes de 2026 en La Matanza.</li>
-</ul>
-
-<h2>De dónde salen los datos</h2>
-<h3>Fuentes oficiales (Parte 1)</h3>
-<ul class="vv-sources">
-<li>Ministerio Público de la Provincia de Buenos Aires: <a href="https://www.mpba.gov.ar/files/estadisticas/Comparativo%20iniciadas%202024-2025%20FCC.pdf">causas penales iniciadas en La Matanza, comparativo 2024-2025</a> (corte: 11/01/2026).</li>
-<li>Ministerio Público: <a href="https://www.mpba.gov.ar/files/estadisticas/Litigiosidad%20FCC%20iniciadas%202024-2025.pdf">causas por cada 100.000 habitantes, por departamento judicial, 2024-2025</a>.</li>
-<li>Ministerio Público: <a href="https://www.mpba.gov.ar/estadisticas">estadísticas anuales de causas iniciadas, 2018 a 2023</a>.</li>
-<li>Ministerio Público: <a href="https://www.mpba.gov.ar/files/informes/Informe%20%202025%20HD.pdf">Informe de Homicidios Dolosos 2025</a> (publicado en mayo de 2026).</li>
-<li>Ministerio de Seguridad de la Nación, SNIC: <a href="https://cloud-snic.minseg.gob.ar/Informes/SNIC_PROVINCIALES/2025/Informe_SNIC_Buenos_Aires_2025.pdf">informe Provincia de Buenos Aires 2025</a> (publicado en septiembre de 2026).</li>
-<li>Ministerio de Seguridad de la Nación, SNIC: <a href="https://cloud-snic.minseg.gob.ar/Bases/SNIC/">bases de datos por partido, anuales y mensuales</a>. Los robos por mes y la comparación de delitos totales por habitante en el conurbano son cálculos propios sobre esta base.</li>
-<li>INDEC: <a href="https://www.indec.gob.ar/ftp/cuadros/poblacion/c2022_bsas_est_c1_2.xlsx">Censo 2022, población por partido de Buenos Aires</a>.</li>
-</ul>
-<h3>Fuentes de la Parte 2 (datos no oficiales o sin verificación oficial)</h3>
-<ul class="vv-sources">
-<li>Publicaciones de @vecinosenalerta en X: <a href="https://x.com/vecinosenalerta/status/2082468215469334769">29/07/2026</a>, <a href="https://x.com/vecinosenalerta/status/2082471622363984244">29/07/2026</a>, <a href="https://x.com/vecinosenalerta/status/2084010660242047059">02/08/2026</a>.</li>
-<li><a href="https://www.cadena3.com/noticia/la-mesa-de-cafe/muerte-de-thiago-correa-criticas-a-la-falta-de-instruccion-policial_431015">Cadena 3, entrevista del 09/06/2025</a>.</li>
-<li><a href="https://mi8.com.ar/carpetas-medicas-en-la-policia-advierten-que-el-personal-de-licencia-no-supera-el-7/">mi8, 24/10/2026</a> (declaración del ministro de Seguridad bonaerense).</li>
-<li>Gobierno de la Provincia de Buenos Aires: <a href="https://gba.gob.ar/comunicacion_publica/gacetillas/kicillof_entreg%C3%B3_40_patrulleros_y_10_motos_para_fortalecer_la">gacetilla</a> y <a href="https://gba.gob.ar/discursos/palabras_del_gobernador_kicillof_durante_la_entrega_de_40_patrulleros_y_10_motos">discurso</a> del 26/08/2026.</li>
-<li>Municipio de La Matanza: <a href="https://www.lamatanza.gov.ar/com">Centro de Operaciones y Monitoreo</a>, <a href="https://lamatanza.gov.ar/proteccionciudadana/paradas-seguras">Paradas seguras</a> y <a href="https://www.lamatanza.gov.ar/noticias/1246/details">noticia n.º 1246</a>.</li>
-<li><a href="https://es.wikipedia.org/wiki/Lomas_del_Mirador">Wikipedia, "Lomas del Mirador"</a>.</li>
-</ul>
-
-<p class="vv-foot">Informe VaLoMi N.º 1 · Elaborado en octubre de 2026 con datos oficiales publicados hasta el 29/10/2026. Las cifras de la Parte 2 no son oficiales. Si un organismo publica o corrige datos, actualizaremos este informe.</p>
-
+<p>La publicación de series verificables permitiría que vecinos, periodistas, representantes políticos y organizaciones puedan evaluar la evolución de la seguridad sin depender únicamente de anuncios o testimonios aislados.</p>
+<h2 id="fuentes-y-alcance">Fuentes y alcance</h2>
+<p><strong>Fuentes oficiales:</strong> <a href="https://www.mpba.gov.ar/files/estadisticas/Comparativo%20iniciadas%202024-2025%20FCC.pdf">Ministerio Público bonaerense: comparativo de causas 2024-2025</a>; <a href="https://www.mpba.gov.ar/files/estadisticas/Litigiosidad%20FCC%20iniciadas%202024-2025.pdf">tasas de litigiosidad por departamento judicial</a>; <a href="https://www.mpba.gov.ar/estadisticas">estadísticas del Ministerio Público</a>; <a href="https://www.mpba.gov.ar/files/informes/Informe%20%202025%20HD.pdf">informe de homicidios dolosos 2025</a>; <a href="https://cloud-snic.minseg.gob.ar/Informes/SNIC_PROVINCIALES/2025/Informe_SNIC_Buenos_Aires_2025.pdf">Informe SNIC Buenos Aires 2025</a>; <a href="https://cloud-snic.minseg.gob.ar/Bases/SNIC/">bases SNIC</a>; <a href="https://www.indec.gob.ar/ftp/cuadros/poblacion/c2022_bsas_est_c1_2.xlsx">INDEC, Censo 2022</a>.</p>
+<p><strong>Otras fuentes identificadas en el informe original:</strong> publicaciones de <span class="citation" data-cites="vecinosenalerta">@vecinosenalerta</span> en X del 29/07 y 02/08/2026; <a href="https://www.cadena3.com/noticia/la-mesa-de-cafe/muerte-de-thiago-correa-criticas-a-la-falta-de-instruccion-policial_431015">entrevista en Cadena 3 del 09/06/2025</a>; <a href="https://mi8.com.ar/carpetas-medicas-en-la-policia-advierten-que-el-personal-de-licencia-no-supera-el-7/">declaración sobre licencias publicada en mi8</a>; <a href="https://gba.gob.ar/comunicacion_publica/gacetillas/kicillof_entreg%C3%B3_40_patrulleros_y_10_motos_para_fortalecer_la">entrega provincial de patrulleros del 26/08/2026</a>; <a href="https://lamatanza.gov.ar/proteccionciudadana/paradas-seguras">página municipal de paradas seguras</a>; <a href="https://www.lamatanza.gov.ar/noticias/1246/details">comunicación municipal n.º 1246</a>. La población no verificada de Lomas del Mirador figura en Wikipedia, fuente no utilizada para calcular tasas.</p>
+<p class="vv-note"><strong>Nota metodológica.</strong> Esta es una reescritura editorial del Informe VaLoMi N.º 1, basada en la documentación entregada, sin nueva auditoría de las fuentes externas. Los datos y afirmaciones se presentan con el alcance que surge de ese material. Si se publican rectificaciones o información nueva, corresponde fechar y documentar la actualización.</p>
+<p class="vv-foot"><strong>Ante una emergencia, llamá al 911.</strong> Este sitio no reemplaza a la Policía, a las fiscalías ni a los canales formales de denuncia.</p>
 </article>
-</body>
-</html>
+
