@@ -65,7 +65,7 @@ export default async function PaginaInforme({ params }: Props) {
         <div className="informe-detalle">
           <div className="informe-detalle__lateral">
             <BotonesPdf informe={i} bytes={bytes} />
-            {i.numero === 4 && <p><a href="/documentos/informe-4-prensa.pdf" download>Descargar versión de prensa (PDF)</a> · <a href="/documentos/originales/informe-4-prensa.pdf">PDF de prensa recibido</a></p>}
+            {i.numero === 4 && <p><a href="/documentos/informe-4-prensa.pdf?edicion=contraste-v2" download>Descargar PDF para prensa (misma edición revisada)</a></p>}
             {i.resumen && <ResumenRotulado texto={i.resumen} />}
             {i.correcciones.length > 0 && (
               <div className="erratas">
@@ -80,9 +80,9 @@ export default async function PaginaInforme({ params }: Props) {
               </div>
             )}
             <div className="original">
-              <h2>Documento y diseño</h2>
-              <p>El PDF incorpora una maquetación editorial común. Se conserva el documento recibido para consultar y comparar su contenido.</p>
-              <p><a href={`/documentos/originales/informe-${i.numero}-web.pdf`}>Consultar PDF recibido</a></p>
+              <h2>Documento revisado</h2>
+              <p>La descarga corresponde a la edición revisada con la tabla de contrastación ciudadana, también publicada en esta página.</p>
+              <p><a href={`/documentos/originales/informe-${i.numero}-web.pdf`}>Consultar PDF anterior (archivo)</a></p>
               <p className="original__huella">
                 Huella SHA-256 del PDF descargable:
                 <code>{sha256}</code>
@@ -91,7 +91,7 @@ export default async function PaginaInforme({ params }: Props) {
           </div>
           {html ? (
             <div id="version-web" className="version-web">
-              <p className="version-web__rotulo">Versión web del informe · el documento de referencia es el PDF recibido</p>
+              <p className="version-web__rotulo">Versión web del informe · edición revisada con contrastación ciudadana</p>
               <div dangerouslySetInnerHTML={{ __html: html }} />
             </div>
           ) : (

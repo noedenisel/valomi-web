@@ -9,7 +9,7 @@ export function SelloEjemplo() {
 }
 
 export function BotonesPdf({ informe, bytes, conVersionWeb = false }: { informe: Informe; bytes: number; conVersionWeb?: boolean }) {
-  const href = `/informes/${informe.slug}/pdf`;
+  const href = `/informes/${informe.slug}/pdf?archivo=${encodeURIComponent(informe.pdf)}`;
   const detalle = [informe.paginas ? `${informe.paginas} páginas` : null, tamano(bytes)].filter(Boolean).join(', ');
   return (
     <div className="botones">
@@ -76,7 +76,7 @@ export function FilaInforme({ informe }: { informe: Informe }) {
       <div className="fila-informe__acciones">
         {informe.esEjemplo && <SelloEjemplo />}
         {!retirado && (
-          <a className="enlace-pdf" href={`/informes/${informe.slug}/pdf`} download={`VaLoMi-${informe.slug}.pdf`} aria-label={`Descargar PDF: ${informe.titulo}`}>
+          <a className="enlace-pdf" href={`/informes/${informe.slug}/pdf?archivo=${encodeURIComponent(informe.pdf)}`} download={`VaLoMi-${informe.slug}.pdf`} aria-label={`Descargar PDF: ${informe.titulo}`}>
             <Icono nombre="descarga" /> PDF
           </a>
         )}
