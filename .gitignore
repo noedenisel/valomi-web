@@ -1,0 +1,13 @@
+node_modules/
+.next/
+.vercel/
+.env*
+!.env.example
+.DS_Store
+*.tsbuildinfo
+.editorial-pdf/
+__pycache__/
+
+# Documentación operativa que no forma parte del sitio público
+prompt-email-marketing.md
+scripts/cargar-smtp.sh

@@ -1,0 +1,12 @@
+titulo: 'Observatorio Vecinal · septiembre de 2026 (ejemplo)'
+periodo: 2026-09
+fechaPublicacion: 2026-10-31
+datos: datos.json
+pdf: pdf.pdf
+estado:
+  discriminant: aprobado
+  value:
+    aprobadoPor: 'Ejemplo: sin aprobación real'
+    fechaAprobacion: 2026-10-31
+correcciones: []
+esEjemplo: true

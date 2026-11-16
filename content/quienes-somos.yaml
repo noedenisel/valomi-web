@@ -1,0 +1,93 @@
+bio: >-
+  Soy Gabriel Lombardo, vecino de Lomas del Mirador, en La Matanza. Soy
+  distribuidor de pan desde toda la vida. Hace más de 30 años fundé Vecinos en
+  Alerta de Lomas del Mirador, por algo que no hace el Estado a nivel municipal, provincial y
+  nacional. Sé lo que es la inseguridad: ya sufrí {asaltos} asaltos, y la cifra
+  sigue creciendo. Hoy estoy solo, porque mi familia se fue. Desde ahí me reúno con vecinos que sufren la violencia
+  delictiva y llevo sus reclamos a las autoridades. No soy político, no cobro
+  subsidios: camino la calle. Es un trabajo que nadie me paga. Porque el Estado está
+  donde no debe y falta donde debe estar. Y la seguridad no tiene color
+  político.
+trayectoria: Más de 20 años
+asaltos:
+  cantidad: 42
+  actualizado: null
+  aclaracion: Asaltos sufridos por Gabriel en su trabajo como distribuidor. Cifra informada por él, que sigue en aumento.
+  fuente: Cadena 3, 09/06/2025
+  url: https://www.cadena3.com/noticia/la-mesa-de-cafe/muerte-de-thiago-correa-criticas-a-la-falta-de-instruccion-policial_430998
+  antecedentes:
+    - cantidad: 38
+      fuente: La Nación, 24/09/2006
+      url: https://www.lanacion.com.ar/sociedad/cada-vez-hay-mas-vecinos-en-alerta-para-combatir-los-robos-nid843298/
+fotoAlt: Gabriel Lombardo, presidente de VaLoMi
+cita: El Estado está donde no debe y falta donde debe estar.
+citaFuente: Cadena 3, 09/06/2025
+citaUrl: https://www.cadena3.com/noticia/la-mesa-de-cafe/muerte-de-thiago-correa-criticas-a-la-falta-de-instruccion-policial_430998
+citasPrensa:
+  - texto: Hace más de 31 años fundé Vecinos en Alerta por algo que no hace el Estado a nivel municipal, provincial y nacional.
+    fuente: La Nación, 23/10/2021
+    url: https://www.lanacion.com.ar/seguridad/vecinos-en-alerta-estoy-llegando-esta-todo-tranquilo-es-el-mensaje-que-mas-se-repite-en-el-conurbano-nid23102021/
+  - texto: Nosotros no somos políticos, no cobramos subsidios ni nada de eso, caminamos la calle.
+    fuente: Radio Palermo 94.7, Diálogo Franco, 02/11/2009
+    url: http://francomercuriali.blogspot.com/2009/11/gabriel-lombardo-presidente-de-vecinos.html
+  - texto: Recorro 200 manzanas dos veces por semana. […] Un trabajo que nadie nos paga.
+    fuente: Radio Rivadavia, 08/11/2021
+    url: https://rivadavia.com.ar/noticias/mejor-ahora/otra-victima-de-la-inseguridad-asesinaron-a-un-kiosquero-en-ramos-mejia
+  - texto: Los jóvenes se van y los grandes se mueren, yo estoy solo porque mi familia se fue.
+    fuente: Cadena 3, 19/08/2025
+    url: https://www.cadena3.com/noticia/radioinforme-3/la-matanza-crece-la-molestia-y-el-miedo-de-vecinos-por-los-funerales-tumberos_455686
+  - texto: Me asaltaron 38 veces en siete años y tengo más de nueve balazos en la camioneta con la que hago el reparto.
+    fuente: La Nación, 24/09/2006
+    url: https://www.lanacion.com.ar/sociedad/cada-vez-hay-mas-vecinos-en-alerta-para-combatir-los-robos-nid843298/
+historia: >-
+  Gabriel Lombardo fundó Vecinos en Alerta de Lomas del Mirador hace más de 30
+  años, en el partido de La Matanza. En 2008, VaLoMi figura como asociación, con reuniones semanales con vecinos
+  víctimas de la violencia delictiva.
+queHacemos:
+  - Me reúno con vecinos que sufren la violencia delictiva y llevo sus reclamos a las autoridades.
+  - Sigo la respuesta de las autoridades y estudio cómo funciona la seguridad en el territorio, desde el patrullaje y los móviles hasta la distribución de recursos y de fondos.
+  - Camino la calle. No soy político y no cobro subsidios.
+  - Publico el Informe VaLoMi, con el documento original para descargar.
+lema: La seguridad no tiene color político.
+valores:
+  - titulo: Con datos
+    texto: Cada afirmación pública, con su fuente. Contrasto las cifras con la realidad, porque no se condicen.
+  - titulo: Sin color político
+    texto: No soy político y no cobro subsidios. Trabajo con cualquier autoridad que tenga que dar respuestas.
+  - titulo: Transparencia
+    texto: Lo que pido y lo que me responden, publicado con su documento.
+  - titulo: En la calle
+    texto: Soy vecino de Lomas del Mirador. Es un trabajo que nadie me paga.
+hitos:
+  - anio: Hace más de 30 años
+    titulo: Funda Vecinos en Alerta de Lomas del Mirador
+    texto: Gabriel Lombardo funda Vecinos en Alerta de Lomas del Mirador.
+    fuente: La Nación, 23/10/2021
+  - anio: '2006'
+    titulo: Arma su propio mapa del delito
+    texto: La Nación publica que organiza a los vecinos en alerta y que, con sus avisos, arman su «propio mapa del delito».
+    fuente: La Nación, 24/09/2006
+  - anio: '2008'
+    titulo: VaLoMi figura como asociación
+    texto: Reuniones semanales con vecinos víctimas de la violencia delictiva.
+    fuente: Documentos propios de VaLoMi, 2008
+  - anio: '2012'
+    titulo: Alarmas comunitarias, botones antipánico y luces
+    texto: Logra un sistema de alarmas comunitarias, botones antipánico y luces en las calles Alvear, Venezuela y Avellaneda.
+    fuente: Clarín Zonales, 16/11/2012
+  - anio: '2020'
+    titulo: Pide una reunión al ministro de Seguridad bonaerense
+    texto: ''
+    fuente: Radio Rivadavia, Todos Juntos, 11/08/2020
+  - anio: '2021'
+    titulo: Recorre 200 manzanas dos veces por semana
+    texto: ''
+    fuente: Radio Rivadavia, 08/11/2021
+  - anio: '2023'
+    titulo: Clarín lo cita como fuente de datos
+    texto: Vecinos en Alerta de Lomas del Mirador aporta su análisis sobre la frecuencia de arrebatos en la zona de Liniers.
+    fuente: Clarín, 06/03/2023
+  - anio: '2025'
+    titulo: «La seguridad no tiene color político.»
+    texto: ''
+    fuente: Cadena 3, 09/06/2025

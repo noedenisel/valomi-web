@@ -1,0 +1,5 @@
+data
+.claude
+.next
+node_modules
+.env*

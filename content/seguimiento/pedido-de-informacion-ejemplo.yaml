@@ -1,0 +1,11 @@
+titulo: Pedido de información (ejemplo)
+tipo: pedido
+fecha: 2026-10-15
+organismo: '[EJEMPLO] Organismo destinatario'
+situacion: en-espera
+descripcion: >-
+  Ejemplo de cómo se verá un pedido de acceso a la información pública. No es
+  un pedido real. Cada publicación lleva su documento respaldatorio.
+documento: documento.pdf
+publicado: false
+esEjemplo: true

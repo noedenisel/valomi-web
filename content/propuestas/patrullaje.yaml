@@ -1,0 +1,8 @@
+titulo: Patrullaje
+orden: 4
+icono: patrullaje
+resumen: Que el patrullaje esté donde pasan los hechos y en los horarios en que pasan.
+puntos:
+  - Conocer cómo se asignan los móviles y los recorridos en la zona.
+  - Conocer qué móviles están asignados a cada comisaría y a cada zona.
+  - Relevamiento e informe del estado de esos móviles.
