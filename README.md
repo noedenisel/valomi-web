@@ -1,8 +1,8 @@
-# VaLoMi · actualización para revisión
+# VaLoMi · seguridad y seguimiento ciudadano
 
 Código del sitio web existente, actualizado con el informe 4 y cinco PDF con identidad editorial común. Conserva los PDF recibidos en `public/documentos/originales`.
 
-Repositorio de revisión: https://github.com/noedenisel/valomi-web, rama `revision/informe-4`. No se publicó en Vercel. El logo oficial aún debe recibirse como archivo para completar la marca de agua; el texto del encabezado no sustituye al logo.
+Repositorio: https://github.com/noedenisel/valomi-web. La versión revisada fue aprobada e integrada en `main`. El repositorio está conectado al proyecto existente `valomi` en Vercel, conservando `valomi.com.ar`. La publicación se activa mediante la integración Git; comprobar el resultado del despliegue antes de darla por finalizada. El logo oficial aún debe recibirse como archivo para completar la marca de agua; el texto del encabezado no sustituye al logo.
 
 - `docs/PUBLICACION.md`: instalación y conexión al proyecto actual de Vercel, sin mover el dominio.
 - `docs/PROMPTS-GROK.md`: prompts reutilizables y control de fidelidad.
