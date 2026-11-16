@@ -34,4 +34,4 @@ No se realizó una investigación externa nueva: se preservan el alcance, fechas
 
 [Informe 2 en móvil, desplazado hacia la columna de análisis](vistas/informe-2-contraste-v2-390-analisis.png).
 
-Esta actualización modifica las páginas web. Las descargas PDF conservan la edición preparada previamente, sin reemplazarlas por los cuatro PDF del nuevo ZIP. La propuesta permanece en la rama de revisión, sin publicación en producción ni cambios del dominio.
+Las páginas web y las descargas PDF corresponden a la versión 2 del ZIP. Los cuatro PDF se sirven sin modificar los archivos revisados recibidos. Los recuentos son 6, 6, 5 y 5 páginas. La descarga de prensa del informe 4 sirve la misma edición revisada, ya que el ZIP no trae una versión de prensa distinta. Los documentos anteriores se identifican como archivo. Los enlaces se versionan para evitar reutilizar descargas guardadas en caché. Se verifican las descargas de portada, archivo de informes y páginas individuales mediante SHA-256 frente a los archivos del ZIP. El dominio y el proyecto Vercel existentes se conservan.
