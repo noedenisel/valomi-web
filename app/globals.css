@@ -557,6 +557,9 @@ mark.pendiente {
 .vv table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.95rem; display: block; overflow-x: auto; }
 .vv th, .vv td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--vv-linea); vertical-align: top; }
 .vv th { background: var(--vv-suave); font-weight: 700; }
+/* Contrastación ciudadana: tres columnas legibles y desplazamiento local en móvil. */
+.vv table.vv-contraste { border-top: 3px solid var(--rojo); }
+.vv .vv-contraste th, .vv .vv-contraste td { min-width: 210px; width: 33.333%; }
 .vv td.num, .vv th.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .vv .up { color: #b42318; font-weight: 700; }
 .vv .down { color: #067647; font-weight: 700; }
