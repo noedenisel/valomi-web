@@ -1,0 +1,7 @@
+titulo: Iluminación
+orden: 2
+icono: luz
+resumen: Calles, accesos y paradas con luz que funcione.
+puntos:
+  - Mapear con los vecinos las cuadras y las esquinas con poca luz o sin luz.
+  - Que se me informe el estado de cada reclamo y qué se resolvió.

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informe VaLoMi N.º 2: La semana en La Matanza (26/10 al 01/11/2026)</title>
+<meta name="description" content="Denuncias de vecinos, hechos documentados, datos oficiales y declaraciones sin respaldo sobre la seguridad en La Matanza, del 26/10 al 01/11/2026.">
+<style>
+.vv{--ink:#1f2933;--muted:#52606d;--line:#d9e2ec;--soft:#f0f4f8;--accent:#0b5cad;--accent-soft:#e3eefb;--warn:#8a5a00;--warn-soft:#fff6e0;
+ font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.55;font-size:17px;max-width:760px;margin:0 auto;padding:24px 18px}
+.vv *{box-sizing:border-box}
+.vv h1{font-size:1.75em;line-height:1.2;margin:0 0 .3em}
+.vv h2{font-size:1.3em;margin:1.8em 0 .5em;padding-top:.2em;border-top:2px solid var(--line)}
+.vv h3{font-size:1.05em;margin:1.2em 0 .3em}
+.vv p{margin:.5em 0}
+.vv .vv-kicker{text-transform:uppercase;letter-spacing:.06em;font-size:.78em;color:var(--accent);font-weight:700;margin:0}
+.vv .vv-lead{font-size:1.08em;color:var(--muted)}
+.vv .vv-note{background:var(--soft);border-radius:8px;padding:12px 14px;font-size:.92em;margin:14px 0}
+.vv .vv-box{background:var(--accent-soft);border-left:5px solid var(--accent);border-radius:8px;padding:14px 16px;margin:16px 0}
+.vv .vv-box.warn{background:var(--warn-soft);border-left-color:#e0a100}
+.vv .vv-box h3{margin-top:0}
+.vv ol.vv-ideas{padding-left:1.3em;margin:.4em 0}
+.vv ol.vv-ideas li{margin:.45em 0}
+.vv .vv-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:14px 0}
+.vv .vv-card{border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.vv .vv-card .n{font-size:1.6em;font-weight:800;color:var(--accent);line-height:1.1}
+.vv .vv-card .t{font-size:.9em;color:var(--muted)}
+.vv table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.93em}
+.vv th,.vv td{text-align:left;padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.vv th{background:var(--soft);font-weight:700}
+.vv td.num,.vv th.num{text-align:right;white-space:nowrap}
+.vv .up{color:#b42318;font-weight:700}
+.vv .down{color:#067647;font-weight:700}
+.vv .vv-chart{margin:12px 0 4px}
+.vv .vv-bar-row{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:.92em}
+.vv .vv-bar-year{width:3em;color:var(--muted)}
+.vv .vv-bar-track{flex:1;background:var(--soft);border-radius:4px;height:20px;overflow:hidden}
+.vv .vv-bar{display:block;height:100%;background:#9fb3c8;border-radius:4px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.vv .vv-bar-hi{background:#b42318}
+.vv .vv-bar-last{background:var(--accent)}
+.vv .vv-bar-val{width:4.5em;text-align:right;font-variant-numeric:tabular-nums}
+.vv .vv-caption{font-size:.85em;color:var(--muted)}
+.vv ul{padding-left:1.2em}
+.vv li{margin:.3em 0}
+.vv a{color:var(--accent)}
+.vv .vv-sources li{font-size:.9em}
+.vv .vv-foot{font-size:.85em;color:var(--muted);border-top:1px solid var(--line);margin-top:2em;padding-top:.8em}
+.vv .vv-divider{margin:2.2em 0 .6em;padding:14px 16px;border:2px dashed #c07a00;border-radius:10px;background:var(--warn-soft)}
+.vv .vv-divider p{margin:.3em 0}
+.vv .vv-divider .big{font-weight:800;font-size:1.05em;color:var(--warn)}
+.vv h2.vv-nooficial{border-top:none;margin-top:.6em;color:var(--warn)}
+.vv .vv-nv{border:1px dashed #c07a00;border-radius:10px;padding:12px 14px;margin:14px 0;background:#fffdf6}
+.vv .vv-nv h3{margin:.1em 0 .4em}
+.vv .vv-tag{display:inline-block;font-size:.75em;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:#fff;background:#b45309;border-radius:4px;padding:2px 7px;margin-bottom:6px}
+.vv .vv-tag.mun{background:#6b7280}
+.vv .vv-tag.ok{background:#067647}
+.vv .vv-pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0}
+.vv .vv-pair>div{border-radius:8px;padding:10px 12px;font-size:.93em}
+.vv .vv-pair .no{background:var(--warn-soft)}
+.vv .vv-pair .si{background:#e7f6ec}
+.vv .vv-pair .lbl{font-weight:800;font-size:.8em;text-transform:uppercase;letter-spacing:.04em;display:block;margin-bottom:3px}
+.vv .vv-pair .no .lbl{color:var(--warn)}
+.vv .vv-pair .si .lbl{color:#067647}
+.vv .vv-src{font-size:.82em;color:var(--muted);margin-top:4px}
+.vv .vv-bar-nv{background:repeating-linear-gradient(45deg,#e0a100 0 6px,#fff1c2 6px 12px)}
+.vv .vv-part{font-size:.8em;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#067647;margin:1.8em 0 -1.2em}
+@media (max-width:560px){.vv .vv-pair{grid-template-columns:1fr}}
+@media print{
+ .vv .vv-nv,.vv .vv-divider,.vv .vv-pair{break-inside:avoid}
+ .vv .vv-divider,.vv .vv-part{break-after:avoid}
+ .vv h2.vv-nooficial{break-before:avoid}
+ @page{size:A4;margin:12mm 13mm}
+ .vv{font-size:10.8pt;max-width:none;padding:0}
+ .vv h2{break-after:avoid;margin-top:1.2em}
+ .vv h3{break-after:avoid}
+ .vv table,.vv .vv-box,.vv .vv-cards,.vv .vv-chart,.vv .vv-card{break-inside:avoid}
+ .vv *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<article class="vv">
+
+<p class="vv-kicker">Informe VaLoMi N.º 2 · Semana del 26/10 al 01/11/2026</p>
+<h1>La semana en La Matanza: 26 denuncias de vecinos que no aparecen en ninguna cifra oficial</h1>
+<p class="vv-lead">Qué pasó del lunes 26 de octubre al domingo 1 de noviembre en Lomas del Mirador, Lomas del Millón, Ramos Mejía, San Justo y el resto del partido, con cada dato y su fuente.</p>
+
+<div class="vv-note">
+<strong>Antes de leer, tres aclaraciones.</strong><br>
+1. Cada punto indica qué es: un <strong>hecho documentado</strong> (tiene un medio o una fuente oficial identificable), un <strong>dato oficial</strong>, una <strong>medida</strong> o una <strong>opinión política</strong>.<br>
+2. El foco está en robos, motochorros, entraderas, salideras y homicidios. Todas las horas son de Argentina.<br>
+3. El informe tiene <strong>dos partes separadas</strong>: primero, lo <strong>documentado y oficial</strong> (secciones 1 a 4); después, <strong>lo que denuncian los vecinos</strong> y las declaraciones oficiales sin respaldo público (secciones 5 y 6). Las denuncias de vecinos son el relevamiento propio de VaLoMi: mucha gente no denuncia en la comisaría porque no confía, y lo cuenta en redes.
+</div>
+
+<div class="vv-box">
+<h3>En pocas palabras</h3>
+<ol class="vv-ideas">
+<li><strong>26 denuncias de vecinos en una semana.</strong> Lo más repetido: robos de autos y camionetas. Ninguna cifra oficial publicada permite medirlas, porque no hay datos de 2026 ni por barrio.</li>
+<li><strong>En los medios, el caso más claro de los barrios foco</strong> fue el robo de un auto con arma blanca en Ramos Mejía, el jueves 29/10 cerca de las 21:00 (Primer Plano).</li>
+<li><strong>Cayó una banda de entraderas.</strong> El Ministerio Público bonaerense informó el 28/10 que la desarticuló. Actuó en Villa Luzuriaga y Villa Celina en septiembre, y hay dos detenidos.</li>
+<li><strong>Los robos bajaron en las cifras oficiales, pero los más violentos subieron.</strong> La baja del 26,4 % que difunde el Municipio tiene fuente oficial. El mismo informe muestra que los robos agravados por lesiones o muerte subieron 37,5 %. Y esas cifras solo cuentan lo que se denuncia.</li>
+<li><strong>No está probado que la baja se deba a los operativos.</strong> Los robos cayeron 20,8 % en todo el país.</li>
+<li><strong>No se detectó ningún homicidio nuevo en el partido</strong> entre el 26/10 y el 01/11.</li>
+<li><strong>Siguen sin rastro público</strong> las 5 comisarías y el patrullaje aéreo del acuerdo de febrero de 2024, el inventario de cámaras y el balance de los megaoperativos.</li>
+</ol>
+</div>
+
+<div class="vv-cards">
+<div class="vv-card"><div class="n">33</div><div class="t">registros en el relevamiento de la semana: <strong>26 denuncias de vecinos</strong> y <strong>7 hechos publicados por medios o fuentes oficiales</strong>.</div></div>
+<div class="vv-card"><div class="n">12</div><div class="t">de esos registros son de los cuatro barrios foco.</div></div>
+<div class="vv-card"><div class="n">13</div><div class="t">son robos de autos y camionetas, lo más repetido de la semana.</div></div>
+</div>
+
+<p class="vv-part">Parte 1 · Hechos documentados y datos oficiales</p>
+<h2>1. Lo que pasó en cada barrio</h2>
+
+<h3>Lomas del Mirador</h3>
+<p>Sin hechos nuevos documentados entre el 26/10 y el 01/11. Los vecinos sí denunciaron hechos en el barrio (sección 5).</p>
+
+<h3>Lomas del Millón</h3>
+<p>Sin hechos nuevos documentados en la semana.</p>
+<p><strong>Medida oficial:</strong> el Ministerio de Seguridad bonaerense ofrece recompensa por cuatro prófugos de un robo seguido de muerte ocurrido el 27/09/2025 en Lomas del Millón (resolución del 22/10/2026, Boletín Oficial del 27/10/2026). No es un hecho de esta semana. Fuente: <a href="https://www.ambito.com/la-provincia-buenos-aires-ofrece-25-millones-cada-uno-los-cuatro-buscados-un-robo-seguido-muerte-la-matanza-n6338230">Ámbito</a>, 27/10/2026, 07:57.</p>
+
+<h3>Ramos Mejía</h3>
+<p><strong>Hecho documentado:</strong> el jueves 29/10, cerca de las 21:00, en la calle Rauch a metros de Díaz Vélez (jurisdicción de la comisaría 9.ª de Lomas del Millón), a una vecina que llegaba con su hijo menor la amenazaron con un arma blanca y le robaron el auto. Según el medio, la misma banda siguió robando fuera del partido. Fuente única: Primer Plano, 31/10/2026, 08:35.</p>
+
+<h3>San Justo</h3>
+<p>Sin hechos nuevos documentados dentro de la semana.</p>
+<p><strong>Contexto, semana anterior:</strong> el viernes 23/10, cerca de las 17:00 (según Diario Anticipos y Crónica TV), en Malabia cerca de Cerviño, dos hombres intentaron robar un auto. Un vecino armado disparó y murió uno de los asaltantes, de 20 años. El cómplice escapó. Según los medios, la fiscalía lo encuadró como legítima defensa (TN, 25/10/2026, 09:03; El1, 25/10/2026, 21:30).</p>
+
+<h2>2. En el resto del partido</h2>
+<ul>
+<li><strong>Villa Luzuriaga y Villa Celina.</strong> El Ministerio Público bonaerense informó que desarticuló una banda de entraderas investigada por dos asaltos, del 18/09 y el 30/09/2026. Identificaron a sus integrantes con cámaras y el peritaje de un celular y de antenas. Hay dos detenidos con antecedentes penales. No se informó la fecha de las detenciones (CIJur, 28/10/2026).</li>
+<li><strong>Villa Luzuriaga.</strong> Dos detenidos en Morón fueron vinculados a una entradera del 14/10/2026 en esa localidad (Primer Plano, 27/10/2026, 07:12).</li>
+<li><strong>Allanamientos.</strong> El 28/10/2026 hubo allanamientos en La Matanza (localidad no informada) y Don Torcuato por entraderas cometidas en La Plata, con un detenido (Infocielo, 28/10/2026, 17:35).</li>
+<li><strong>Contexto, semana anterior.</strong> El 23/10/2026 detuvieron a un hombre de 25 años acusado de una entradera del 12/09 en Laferrere. Se secuestraron armas y el auto usado (Infobae, 24/10/2026).</li>
+</ul>
+
+<h2>3. Datos oficiales: bajan los robos, suben los más violentos</h2>
+<table>
+<thead><tr><th>Indicador (SNIC, La Matanza)</th><th class="num">2024</th><th class="num">2025</th><th class="num">Cambio*</th></tr></thead>
+<tbody>
+<tr><td>Robos (total)</td><td class="num">23.682</td><td class="num">17.434</td><td class="num down">−26,4 %</td></tr>
+<tr><td>Hurtos (total)</td><td class="num">9.014</td><td class="num">7.730</td><td class="num down">−14,3 %</td></tr>
+<tr><td>Ley de drogas (total)</td><td class="num">1.169</td><td class="num">908</td><td class="num down">−22,4 %</td></tr>
+<tr><td>Homicidios dolosos (víctimas)</td><td class="num">152</td><td class="num">149</td><td class="num down">−2,0 %</td></tr>
+<tr><td>Robos agravados por lesiones o muerte</td><td class="num">518</td><td class="num">712</td><td class="num up">+37,5 %</td></tr>
+</tbody>
+</table>
+<p class="vv-caption">*Variación como figura en la fuente. Fuente: Ministerio de Seguridad de la Nación, <a href="https://cloud-snic.minseg.gob.ar/Informes/SNIC_PROVINCIALES/2025/Informe_SNIC_Buenos_Aires_2025.pdf">informe SNIC Provincia de Buenos Aires 2025</a> (publicado el 24/09/2026) y <a href="https://cloud-snic.minseg.gob.ar/Bases/SNIC/">base por departamento</a> (24/07/2026).</p>
+<div class="vv-cards">
+<div class="vv-card"><div class="n">951,5</div><div class="t">robos cada 100.000 habitantes en 2025. En 2024 eran 1.293,2.</div></div>
+<div class="vv-card"><div class="n">8,1</div><div class="t">homicidios cada 100.000 habitantes en 2025. En 2024 eran 8,3.</div></div>
+<div class="vv-card"><div class="n">8,02</div><div class="t">es la tasa de la Procuración bonaerense, con 147 víctimas en 2025: la más alta de la provincia.</div></div>
+</div>
+<p><strong>Qué significa:</strong> la baja figura en la estadística oficial, pero es solo una parte del dato:</p>
+<ul>
+<li><strong>Robos bajan, los violentos suben.</strong> El total cae 26,4 %, pero los robos agravados por lesiones o muerte suben 37,5 %. La comunicación municipal solo informa la baja.</li>
+<li><strong>La causa no está probada.</strong> El Municipio atribuye la baja a los operativos y la tecnología, pero los robos cayeron 20,8 % en todo el país (Nación, 22/01/2026).</li>
+<li><strong>Lo que no se denuncia no se cuenta.</strong> El SNIC solo registra los hechos que la policía cargó. Si los vecinos no van a la comisaría, esos hechos no aparecen. Por eso una baja en las cifras oficiales no alcanza para decir que hay menos delitos en el barrio.</li>
+<li><strong>Patrulleros.</strong> La gacetilla oficial de la Provincia (<a href="https://gba.gob.ar/comunicacion_publica/gacetillas/kicillof_entreg%C3%B3_40_patrulleros_y_10_motos_para_fortalecer_la">26/08/2026</a>) habla de 40 patrulleros y 10 motos. Parte de la prensa (El Destape, 27/08/2026) y el ministro hablan de 400.</li>
+</ul>
+
+<h2>4. Medidas, compromisos y Concejo Deliberante</h2>
+<h3>Municipio de La Matanza</h3>
+<p><strong>Medida:</strong> megaoperativos semanales de prevención y saturación con Policía bonaerense, Grupo de Prevención Motorizado, Guardia Urbana y el Centro de Operaciones y Monitoreo. Se difundieron el 27/10 (El Destape, 18:35) y el 30/10 (Noticias Platenses). No se publicaron resultados de esta semana (detenidos, secuestros) por zona.</p>
+<h3>Provincia y Policía bonaerense</h3>
+<p>Sin anuncios provinciales nuevos para La Matanza esta semana. La Policía bonaerense participa en los megaoperativos, y la DDI La Matanza (Gabinete de Robos) intervino en la investigación de la banda de entraderas.</p>
+<h3>Compromisos sin rastro</h3>
+<p><strong>Compromiso:</strong> el acuerdo Espinoza–Alonso de febrero de 2024 (Infocronos, 20/02/2024) prometió 5 comisarías nuevas de atención al público y patrullaje aéreo. A más de dos años y medio, no hay ubicación, fecha de apertura ni registro de vuelos.</p>
+<h3>Concejo Deliberante</h3>
+<p><strong>Hecho documentado:</strong> el 21/10/2026 el oficialismo rechazó en el Concejo Deliberante las mociones para citar al intendente (pedido del bloque La Libertad Avanza del 22/09) y al secretario de Protección Ciudadana, Eduardo Barcat (El1, 21/10/2026).</p>
+<p><strong>Opinión:</strong> las posiciones del bloque La Libertad Avanza y de la concejala Leila Gianni (Las Fuerzas del Pueblo) son posturas políticas.</p>
+
+<div class="vv-divider">
+<p class="big">Parte 2 · Lo que denuncian los vecinos y lo que anuncian los funcionarios</p>
+<p>Las estadísticas oficiales solo reúnen lo que llega a una comisaría o a una fiscalía. Mucha gente no denuncia ahí porque no confía, y lo cuenta en redes o en los medios del barrio. <strong>Este relevamiento es la estadística propia de VaLoMi.</strong> Cada denuncia indica dónde se publicó.</p>
+</div>
+<h2 class="vv-nooficial">5. Lo que denuncian los vecinos</h2>
+<div class="vv-nv">
+<span class="vv-tag">Relevamiento de VaLoMi – denuncias de vecinos</span>
+<p>En la semana se registraron 26 denuncias. Acá van las vinculadas a robos en los barrios foco. No pasaron por una verificación oficial, y las horas de Facebook son aproximadas.</p>
+<ul>
+<li><strong>Lomas del Mirador (sin calle), alrededor del 29/10:</strong> una vecina dice que robaron en la casa de al lado, entrando por el techo y el paredón (Facebook, grupo Seguridad para Lomas del Mirador, publicado alrededor del 29/10).</li>
+<li><strong>Lomas del Mirador (zona de Salta, Pringles, Arriola y Mosconi; localidad inferida), 29/10 cerca de las 05:30:</strong> robo de una moto estacionada en una casa (Facebook, grupo Vecinos en Alerta Lomas del Mirador; fecha de publicación no confirmada).</li>
+<li><strong>Lomas del Mirador / Ramos Mejía (Charcas y Sargento Cabral), probablemente la madrugada del 01/11:</strong> un vecino relata que un grupo en una camioneta intentó robar con amenazas, sin lograrlo (Facebook, publicado alrededor de las 08:15 del 01/11).</li>
+<li><strong>Sargento Cabral entre Mosconi y Ruta 3 (localidad no informada), alrededor del 28/10:</strong> intentos de robo de medidores de gas (Facebook, publicado alrededor del 28/10).</li>
+<li><strong>Lomas del Millón / Ramos Mejía (Larrea y Cabo Eduardo Vaca):</strong> vecinos denuncian robos reiterados de medidores de agua (El1, 27/10, 16:57).</li>
+<li><strong>Ramos Mejía:</strong> robo en el Ateneo de la UCR, hallado el 22/10 según el denunciante (El1, 27/10, 10:08).</li>
+<li><strong>San Justo (Ocampo al 3300), una noche no precisada, a más tardar el 26/10 después de las 22:00:</strong> intento de ingreso a viviendas; huyeron al sonar la alarma vecinal (SM Noticias, 27/10, 21:28).</li>
+<li><strong>San Justo, estacionamiento del shopping, probablemente el 30/10 cerca de las 20:00:</strong> robo de una pickup (Facebook, publicado alrededor de las 18:20 del 31/10).</li>
+<li><strong>Fuera de los barrios foco:</strong> robos de autos y camionetas en Laferrere, González Catán, Ciudad Evita, Rafael Castillo y Villa Madero, y robos a peatones en La Tablada, según publicaciones de vecinos y cuentas de X.</li>
+</ul>
+</div>
+
+<h2 class="vv-nooficial">6. Lo que anuncian los funcionarios sin respaldo público</h2>
+<div class="vv-nv">
+<span class="vv-tag mun">Declaración oficial – sin inventario ni balance público</span>
+<h3>Lo que se anuncia y lo que falta</h3>
+<div class="vv-pair">
+<div class="no"><span class="lbl">Lo que se dice</span>Cámaras: "+3.000" (feb-2025), "+5.000" (nov-2025) y "+6.000" (oct-2026).</div>
+<div class="si"><span class="lbl">Lo que falta</span>Inventario público y compras documentadas.</div>
+</div>
+<div class="vv-pair">
+<div class="no"><span class="lbl">Lo que se dice</span>Megaoperativos con "resultados altamente positivos".</div>
+<div class="si"><span class="lbl">Lo que falta</span>Un balance oficial de detenidos, autos o motos.</div>
+</div>
+<div class="vv-pair">
+<div class="no"><span class="lbl">Lo que se dice</span>"Unas 1.500 motos por semana", según "fuentes del operativo" (El Nacional de Matanza, 27/10/2026).</div>
+<div class="si"><span class="lbl">Lo que falta</span>Un dato oficial que lo respalde.</div>
+</div>
+<div class="vv-pair">
+<div class="no"><span class="lbl">Lo que se dice</span>Base del Grupo de Prevención Motorizado de Ramos Mejía, inaugurada el 16/10/2025.</div>
+<div class="si"><span class="lbl">Lo que falta</span>Resultados: pasó un año y no hay ninguno publicado.</div>
+</div>
+<div class="vv-pair">
+<div class="no"><span class="lbl">Lo que se dice</span>Reconocimiento facial, mencionado desde febrero de 2024.</div>
+<div class="si"><span class="lbl">Lo que falta</span>Cantidad, ubicación, marco normativo y protocolo de datos personales.</div>
+</div>
+<div class="vv-pair">
+<div class="no"><span class="lbl">Lo que se dice</span>El intendente Fernando Espinoza enumeró 1.500 paradas seguras, anillo digital con lectoras de patentes, reconocimiento facial y más de 20.000 alarmas vecinales (El Destape, 27/10/2026).</div>
+<div class="si"><span class="lbl">Lo que falta</span>Respaldo público de esas cantidades.</div>
+</div>
+<div class="vv-pair">
+<div class="no"><span class="lbl">Lo que se dice</span>El ministro Javier Alonso dijo el 30/09 que en ocho meses hubo 4.600 detenidos en La Matanza y que patrullan 400 vehículos (1000 Caracteres, 01/10/2026).</div>
+<div class="si"><span class="lbl">Lo que falta</span>Las cifras desagregadas por localidad.</div>
+</div>
+</div>
+
+<div class="vv-box warn">
+<h3>El mensaje de esta parte</h3>
+<p>Los vecinos cuentan lo que pasa en su cuadra. Los funcionarios anuncian cifras <strong>sin inventario ni balance público</strong>. Para comparar una cosa con la otra, los organismos tienen que publicar sus datos por barrio.</p>
+</div>
+
+<h2>7. Lo que todavía no se sabe</h2>
+<ul>
+<li><strong>Datos por barrio:</strong> no hay estadísticas oficiales por localidad (Lomas del Mirador, Lomas del Millón, Ramos Mejía, San Justo) ni delitos por comisaría. Habría que pedirlos por la Ley 12.475.</li>
+<li><strong>Resultados:</strong> no hay resultados publicados de los megaoperativos ni de la base del Grupo de Prevención Motorizado, ni la dotación de la Guardia Urbana.</li>
+<li><strong>Datos abiertos:</strong> Nación presentó al SNIC como caso de referencia el 29/10. Su portal estadisticascriminales.minseg.gob.ar dio error 403 al consultarlo el 29/10 y el 31/10; cloud-snic.minseg.gob.ar funciona.</li>
+</ul>
+<p class="vv-caption">Límites de este relevamiento: el monitoreo de redes y medios arrancó el miércoles 28/10 por la tarde, y un barrido ampliado el 31/10 cubrió desde el lunes 26/10. Corte: domingo 01/11/2026, 11:00. Puede haber hechos que no llegaron a la prensa ni a las redes.</p>
+
+<h2>De dónde salen los datos</h2>
+<h3>Hechos y medidas de la semana</h3>
+<ul class="vv-sources">
+<li>CIJur (Ministerio Público bonaerense), "Desmantelaron una banda dedicada a cometer entraderas en La Matanza": hechos del 18/09 y 30/09/2026; publicado el 28/10/2026.</li>
+<li>Primer Plano, "Raid delictivo que arrancó en Ramos Mejía": hecho del 29/10/2026, 21:00 aprox.; publicado el 31/10/2026, 08:35.</li>
+<li><a href="https://www.ambito.com/la-provincia-buenos-aires-ofrece-25-millones-cada-uno-los-cuatro-buscados-un-robo-seguido-muerte-la-matanza-n6338230">Ámbito, recompensa por cuatro buscados</a>: hecho del 27/09/2025, resolución del 22/10/2026; publicado el 27/10/2026, 07:57.</li>
+<li>Primer Plano, "Detenidos en Morón acusados de entradera en Villa Luzuriaga": hecho del 14/10/2026; publicado el 27/10/2026, 07:12.</li>
+<li>Infocielo, "Allanamientos por entraderas en La Plata": 28/10/2026, 17:35.</li>
+<li>Infobae, "Detención por una entradera en Laferrere": robo del 12/09, detención del 23/10/2026; publicado el 24/10/2026.</li>
+<li>TN (25/10/2026, 09:03), El1 (25/10/2026, 21:30) y Diario Anticipos (27/10/2026, 17:20): intento de robo en San Justo del 23/10/2026.</li>
+<li>El Destape (27/10/2026, 18:35), Noticias Platenses (30/10/2026) y El Nacional de Matanza (27/10/2026): megaoperativos.</li>
+<li>El1: Concejo Deliberante (21/10/2026) y base del Grupo de Prevención Motorizado de Ramos Mejía (16/10/2025). Diputados Bonaerense: pedido de La Libertad Avanza (22/09/2026).</li>
+</ul>
+<h3>Datos oficiales y declaraciones</h3>
+<ul class="vv-sources">
+<li>Ministerio de Seguridad de la Nación, SNIC: <a href="https://cloud-snic.minseg.gob.ar/Informes/SNIC_PROVINCIALES/2025/Informe_SNIC_Buenos_Aires_2025.pdf">informe Buenos Aires 2025</a> (24/09/2026) y <a href="https://cloud-snic.minseg.gob.ar/Bases/SNIC/">base por departamento</a> (24/07/2026).</li>
+<li>Nación: robos −20,8 % en todo el país, 2025 (22/01/2026). Procuración bonaerense: homicidios 2025 (05/2026).</li>
+<li>Gobierno bonaerense: <a href="https://gba.gob.ar/comunicacion_publica/gacetillas/kicillof_entreg%C3%B3_40_patrulleros_y_10_motos_para_fortalecer_la">gacetilla de 40 patrulleros y 10 motos</a> (26/08/2026). El Destape: 400 patrulleros (27/08/2026).</li>
+<li>Infocronos: acuerdo de febrero de 2024 (20/02/2024). 1000 Caracteres: declaraciones de Alonso (01/10/2026). Nueva BA: +3.000 cámaras (02/2025). Géneros Matanza: +5.000 cámaras (19/11/2025).</li>
+</ul>
+<h3>Denuncias de vecinos</h3>
+<ul class="vv-sources">
+<li>El1: robo de medidores (27/10/2026, 16:57) y robo en el Ateneo de la UCR (27/10/2026, 10:08). SM Noticias: intento de ingreso en San Justo (27/10/2026, 21:28). Grupos vecinales de Facebook (28/10 al 01/11/2026, horas aproximadas).</li>
+</ul>
+
+<p class="vv-foot">Informe VaLoMi N.º 2 · Semana del 26/10 al 01/11/2026, con corte el 01/11/2026 a las 11:00. Fechas y horas de Argentina. Si un organismo o un medio publica o corrige datos, este informe se actualiza.</p>
+
+</article>
+</body>
+</html>
