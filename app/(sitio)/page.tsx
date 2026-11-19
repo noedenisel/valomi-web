@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+import { URL_MAPA } from '@/lib/publicacion';
 import { FormularioContacto } from '@/components/FormularioContacto';
 import Link from 'next/link';
 import { reader, informesPublicados, seguimientoPublicado, esModoDesarrollo } from '@/lib/contenido';
@@ -8,6 +10,8 @@ import { Icono } from '@/components/Iconos';
 import { FilaInforme, InformeDestacado, SelloEjemplo } from '@/components/Informes';
 import { Medios, type ItemMedio } from '@/components/Medios';
 import { Suscripcion } from '@/components/Suscripcion';
+
+export const metadata: Metadata = { alternates: { canonical: '/' } };
 
 const TIPO_MEDIO = { prensa: 'Diario / portal', radio: 'Radio', tv: 'Televisión' } as const;
 const TIPO_SEGUIMIENTO = {
@@ -103,6 +107,7 @@ export default async function Inicio() {
             <div className="botones">
               <a href="#informes" className="boton boton--primario boton--grande">Ver el último informe</a>
               <a href="#propuestas" className="boton boton--claro boton--grande">Mis propuestas</a>
+              <a href={URL_MAPA} className="boton boton--claro boton--grande" target="_blank" rel="noopener noreferrer" aria-label="Ver mapa de reportes (se abre en otra pestaña)">Ver mapa de reportes</a>
               <a href="https://valomi.online/reportar" className="boton boton--claro boton--grande" target="_blank" rel="noopener noreferrer">Reportar un hecho</a>
             </div>
           </div>
