@@ -1,15 +1,25 @@
 titulo: Pedido a la Procuración General de la Provincia de Buenos Aires
 tipo: pedido
 fecha: 2026-11-04
+fechaActualizacion: 2026-11-04
+puntos: 4
 organismo: Procuración General de la Provincia de Buenos Aires
-situacion: en-espera
+situacion: solicitud-enviada
 descripcion: |-
-  Enviado el 4 de noviembre de 2026 a las 14:04 a sgeneral@mpba.gov.ar.
+  Presentación: 4 de noviembre de 2026, a las 14:04.
 
-  Pedimos copia digital de estadísticas, sin datos de causas ni de personas:
+  Objeto: 4 puntos sobre investigaciones penales preparatorias por homicidios consumados y tentados, totalidad de IPP por delito, metodología y población de referencia. Se piden estadísticas, sin datos de causas ni de personas. Este es un resumen del objeto; el texto literal completo está pendiente de incorporación en una versión pública.
+
+  Qué información pedimos (resumen por temas, no transcripción literal):
 
   - Las investigaciones penales por homicidio doloso en el departamento judicial La Matanza entre 2023 y 2026, por mes y separando consumados y tentativas.
   - El total de investigaciones por tipo de delito.
   - La metodología con que se elabora la estadística.
+
+  Actuación: presentación de la solicitud. Fecha: 4 de noviembre de 2026. Resultado: Solicitud enviada. En el material disponible no hay respuesta ni constancia de recepción. Documento respaldatorio: correo de presentación informado por VaLoMi; tenor literal y versión pública pendientes.
+
+  Plazo: pendiente de verificación. El régimen de plazo todavía no está verificado. No se señala incumplimiento sin verificar el vencimiento legal y la fecha de recepción válida.
+
+  Fuente: registro de seguimiento informado por VaLoMi, con corte al 19 de noviembre de 2026. No se adjuntan documentos con datos personales.
 publicado: true
 esEjemplo: false

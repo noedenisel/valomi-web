@@ -7,7 +7,6 @@ const SECCIONES = [
   { href: '/#quien-soy', texto: 'Quién soy' },
   { href: '/#medios', texto: 'Medios' },
   { href: '/#informes', texto: 'Informes' },
-  { href: '/transparencia', texto: 'Transparencia' },
   { href: '/#propuestas', texto: 'Propuestas' },
   { href: '/#seguimiento', texto: 'Seguimiento' },
   { href: '/observatorio', texto: 'Observatorio' },

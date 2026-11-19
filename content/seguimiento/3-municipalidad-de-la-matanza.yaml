@@ -1,12 +1,16 @@
 titulo: Pedido a la Municipalidad de La Matanza
 tipo: pedido
 fecha: 2026-11-04
+fechaActualizacion: 2026-11-04
+puntos: 11
 organismo: Municipalidad de La Matanza
-situacion: en-espera
+situacion: solicitud-enviada
 descripcion: |-
-  Enviado el 4 de noviembre de 2026 a las 13:55 a matanzaresponde@lamatanza.gov.ar (Intendente), con copia a direccionderecaudacion@lamatanza.gov.ar, fiscalizacion@lamatanza.gov.ar y matanzaresponde147@lamatanza.gov.ar.
+  Presentación: 4 de noviembre de 2026, a las 13:55, al Intendente Municipal, con copia pedida a Protección Ciudadana y Hacienda.
 
-  Pedimos copia digital de:
+  Objeto: 11 puntos sobre presupuestos y ejecuciones de seguridad 2020–2026, ingresos por origen, transferencias y rendiciones, licitaciones y compras, tasas, inventario de móviles, respaldo de las cifras de patrulleros, motos y efectivos anunciadas en julio de 2026, cámaras, Guardia Urbana y operativos de saturación. Este es un resumen del objeto; el texto literal completo está pendiente de incorporación en una versión pública.
+
+  Qué información pedimos (resumen por temas, no transcripción literal):
 
   - El presupuesto y el gasto ejecutado en seguridad entre 2020 y 2026, y de qué nivel de gobierno vino cada recurso.
   - Las compras de patrulleros, motos y cámaras: expediente, monto, proveedor y fecha.
@@ -14,6 +18,10 @@ descripcion: |-
   - Cuánto se recauda por la Tasa de Seguridad e Higiene y la Tasa por Servicios Generales, y si existe alguna tasa con destino específico a seguridad.
   - El personal municipal de seguridad y los operativos de saturación de 2025 y 2026.
 
-  Plazo: no encontramos un plazo municipal. Pedimos respuesta en 15 días hábiles (hacia el 26/11/2026).
+  Actuación: presentación de la solicitud. Fecha: 4 de noviembre de 2026. Resultado: Solicitud enviada. En el material disponible no hay respuesta ni constancia de recepción. Documento respaldatorio: correo de presentación informado por VaLoMi; tenor literal y versión pública pendientes.
+
+  Plazo: pendiente de verificación. No se señala incumplimiento sin verificar el vencimiento legal y la fecha de recepción válida.
+
+  Fuente: registro de seguimiento informado por VaLoMi, con corte al 19 de noviembre de 2026. No se adjuntan documentos con datos personales.
 publicado: true
 esEjemplo: false

@@ -199,6 +199,11 @@ export default config({
           defaultValue: 'pedido',
         }),
         fecha: fields.date({ label: 'Fecha', validation: { isRequired: true } }),
+        fechaActualizacion: fields.date({
+          label: 'Última actualización',
+          description: 'Fecha de la última actuación informada. Si falta la constancia, aclaralo en la descripción.',
+        }),
+        puntos: fields.integer({ label: 'Cantidad de puntos documentales' }),
         organismo: fields.text({
           label: 'Organismo',
           description: 'Nombre de la institución. No nombres personas.',
@@ -206,17 +211,23 @@ export default config({
         situacion: fields.select({
           label: 'Situación',
           options: [
-            { label: 'Presentado', value: 'presentado' },
-            { label: 'En espera de respuesta', value: 'en-espera' },
-            { label: 'Respondido', value: 'respondido' },
-            { label: 'Respondido en parte', value: 'parcial' },
-            { label: 'Sin respuesta en el plazo', value: 'sin-respuesta' },
+            { label: 'Solicitud enviada', value: 'solicitud-enviada' },
+            { label: 'Recepción confirmada', value: 'recepcion-confirmada' },
+            { label: 'Subsanación presentada', value: 'subsanacion-presentada' },
+            { label: 'Trámite registrado', value: 'tramite-registrado' },
+            { label: 'En plazo de respuesta', value: 'en-plazo' },
+            { label: 'Prórroga comunicada', value: 'prorroga-comunicada' },
+            { label: 'Respuesta parcial', value: 'respuesta-parcial' },
+            { label: 'Respuesta completa', value: 'respuesta-completa' },
+            { label: 'Denegatoria', value: 'denegatoria' },
+            { label: 'Plazo vencido sin respuesta', value: 'plazo-vencido' },
+            { label: 'Reclamo presentado', value: 'reclamo-presentado' },
           ],
-          defaultValue: 'presentado',
+          defaultValue: 'solicitud-enviada',
         }),
         descripcion: fields.text({
           label: 'Descripción',
-          description: 'Solo hechos documentados. Sin acusaciones ni nombres de personas.',
+          description: 'Actuaciones con fuente, fecha y respaldo identificado. Sin datos personales ni vencimientos sin verificar.',
           multiline: true,
         }),
         documento: fields.file({
