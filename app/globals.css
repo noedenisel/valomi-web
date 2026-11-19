@@ -90,6 +90,8 @@ mark.pendiente {
 }
 
 /* Aviso de emergencias ----------------------------------------------------- */
+.acceso-reportar { background: var(--gris-100); padding-block: 12px; }
+.acceso-reportar .contenedor { display: flex; justify-content: center; }
 .aviso { font-size: 0.875rem; line-height: 1.45; }
 .aviso p { margin: 0; }
 .aviso__interior { display: flex; gap: 10px; align-items: flex-start; }

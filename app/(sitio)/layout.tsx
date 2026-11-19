@@ -3,7 +3,7 @@ import { Archivo, Public_Sans } from 'next/font/google';
 import { AvisoEmergencia, Encabezado, Pie } from '@/components/Estructura';
 import { BarraDesarrollo } from '@/components/BarraDesarrollo';
 import '../globals.css';
-import { esProduccionPublica, URL_PUBLICA } from '@/lib/publicacion';
+import { esProduccionPublica, URL_PUBLICA, URL_REPORTAR } from '@/lib/publicacion';
 
 const titulo = Archivo({ subsets: ['latin'], axes: ['wdth'], variable: '--fuente-titulo', display: 'swap' });
 const texto = Public_Sans({ subsets: ['latin'], variable: '--fuente-texto', display: 'swap' });
@@ -27,6 +27,14 @@ export default function LayoutSitio({ children }: { children: React.ReactNode })
     <html lang="es-AR" className={`${titulo.variable} ${texto.variable}`}>
       <body>
         <a href="#contenido" className="saltar">Saltar al contenido</a>
+        <div className="acceso-reportar">
+          <div className="contenedor">
+            <a className="boton boton--primario" href={URL_REPORTAR} target="_blank" rel="noopener noreferrer">
+              REPORTAR HECHO
+              <span className="oculto-visual"> en el mapa de seguridad de VaLoMi (abre otra pestaña)</span>
+            </a>
+          </div>
+        </div>
         <AvisoEmergencia />
         <Encabezado />
         <main id="contenido">{children}</main>

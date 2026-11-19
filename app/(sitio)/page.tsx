@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { URL_MAPA } from '@/lib/publicacion';
+import { URL_MAPA, URL_REPORTAR } from '@/lib/publicacion';
 import { FormularioContacto } from '@/components/FormularioContacto';
 import Link from 'next/link';
 import { reader, informesPublicados, seguimientoPublicado, esModoDesarrollo } from '@/lib/contenido';
@@ -108,7 +108,7 @@ export default async function Inicio() {
               <a href="#informes" className="boton boton--primario boton--grande">Ver el último informe</a>
               <a href="#propuestas" className="boton boton--claro boton--grande">Mis propuestas</a>
               <a href={URL_MAPA} className="boton boton--claro boton--grande" target="_blank" rel="noopener noreferrer" aria-label="Ver mapa de reportes (se abre en otra pestaña)">Ver mapa de reportes</a>
-              <a href="https://valomi.online/reportar" className="boton boton--claro boton--grande" target="_blank" rel="noopener noreferrer">Reportar un hecho</a>
+              <a href={URL_REPORTAR} className="boton boton--claro boton--grande" target="_blank" rel="noopener noreferrer">Reportar un hecho</a>
             </div>
           </div>
           {ultimo && (
