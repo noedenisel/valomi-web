@@ -17,7 +17,7 @@ type Props = { params: Promise<{ slug: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const i = await informe((await params).slug);
-  return i ? { title: i.titulo, description: etiquetaInforme(i) } : {};
+  return i ? { title: i.titulo, description: etiquetaInforme(i), alternates: { canonical: `/informes/${i.slug}` } } : {};
 }
 
 export default async function PaginaInforme({ params }: Props) {

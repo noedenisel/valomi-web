@@ -20,7 +20,10 @@ export async function POST(req: Request) {
   if (!datos || typeof datos !== 'object') return respuesta(400, 'No pude leer el formulario.');
   // Campo trampa: las personas no lo ven; si viene completo, es un robot. Se responde "ok" sin guardar nada.
   if (datos.sitio) return respuesta(200, 'ok');
-  const lista = datos.lista === 'informe' ? 'informe' : 'mapa';
+  if (datos.lista !== 'informe' && datos.lista !== 'mapa') {
+    return respuesta(400, 'Esa lista de suscripción no está habilitada.');
+  }
+  const lista: keyof typeof LISTAS = datos.lista;
   const email = String(datos.email ?? '').trim().toLowerCase();
   if (email.length > 254 || !EMAIL.test(email)) return respuesta(400, 'Revisá el correo: parece que no está bien escrito.');
   if (datos.acepto !== true) return respuesta(400, 'Para anotarte tenés que aceptar la política de privacidad.');
