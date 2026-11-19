@@ -294,9 +294,17 @@ export default async function Inicio() {
             )}
           </div>
 
-          <div id="suscripcion" className="suscripcion">
+          <div id="boletin-prensa" className="suscripcion" aria-labelledby="boletin-prensa-titulo">
             <div>
-              <h3>Recibí el Informe VaLoMi</h3>
+              <h3 id="boletin-prensa-titulo">Recibí el Boletín de prensa</h3>
+              <p>Suscribite para recibir comunicados y materiales de prensa de VaLoMi en tu correo.</p>
+            </div>
+            <Suscripcion lista="prensa" />
+          </div>
+
+          <div id="suscripcion" className="suscripcion" aria-labelledby="suscripcion-titulo">
+            <div>
+              <h3 id="suscripcion-titulo">Recibí el Informe VaLoMi</h3>
               <p>Si querés recibir el informe semanal en tu correo, suscribite.</p>
             </div>
             <Suscripcion lista="informe" />

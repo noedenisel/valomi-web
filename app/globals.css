@@ -326,6 +326,8 @@ mark.pendiente {
 @media (min-width: 900px) { .suscripcion { grid-template-columns: 1fr 1.3fr; gap: 48px; align-items: start; } }
 .suscripcion h3 { margin-bottom: 4px; }
 .suscripcion p { margin: 0; }
+.suscripcion__acciones { display: grid; justify-items: start; gap: 12px; min-width: 0; }
+.suscripcion__acciones p { font-size: 0.9rem; color: var(--gris-700); }
 
 /* Informes ----------------------------------------------------------------- */
 .informes { display: grid; gap: 32px; }

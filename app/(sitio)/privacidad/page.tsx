@@ -6,10 +6,13 @@ export const metadata: Metadata = { title: 'Privacidad' };
 
 export default function Privacidad() {
   return (
-    <PaginaLegal titulo="Política de privacidad" actualizado="3 de noviembre de 2026">
+    <PaginaLegal titulo="Política de privacidad" actualizado="19 de noviembre de 2026">
       <h2>En pocas palabras</h2>
       <ul>
-        <li>Esta web no te pide registrarte. Los únicos formularios son los de suscripción, y solo piden tu correo.</li>
+        <li>
+          Esta web no te pide registrarte. Podés escribirnos desde el formulario de contacto. Para suscribirte al Informe
+          VaLoMi o al Boletín de prensa, te llevamos a un formulario de EnvíaloSimple.
+        </li>
         <li>No uso cookies de publicidad ni herramientas de seguimiento.</li>
         <li>Si me escribís, uso tus datos solo para responderte.</li>
         <li>Podés pedirme en cualquier momento que borre tus datos.</li>
@@ -27,7 +30,7 @@ export default function Privacidad() {
       <h2>Qué datos trato</h2>
       <ul>
         <li>
-          <strong>Navegación:</strong> DonWeb, el servicio que aloja esta web, registra datos técnicos básicos (por ejemplo,
+          <strong>Navegación:</strong> Vercel, el servicio que aloja esta web, registra datos técnicos básicos (por ejemplo,
           la dirección IP y el tipo de navegador) para que la web funcione y se proteja de ataques. No los uso para
           identificarte.
         </li>
@@ -38,16 +41,17 @@ export default function Privacidad() {
           </Texto>
         </li>
         <li id="aviso-lanzamiento">
-          <strong>Suscripciones:</strong> si te suscribís al Informe VaLoMi semanal o al aviso de lanzamiento del mapa de
-          reportes vecinales, guardo tu correo, la lista a la que te sumaste y la fecha. Primero te mando un mail para que
-          confirmes que la dirección es tuya.
+          <strong>Suscripciones:</strong> las suscripciones al Informe VaLoMi semanal y al Boletín de prensa se completan
+          mediante formularios alojados en EnvíaloSimple, servicio de Donweb. Cada publicación tiene su propio formulario.
+          Uso los datos que envíes para gestionar tu suscripción y enviarte la publicación elegida. Si recibís un correo
+          de confirmación, seguí sus instrucciones para completar el alta.
         </li>
       </ul>
 
       <h2>Quién más procesa tus datos</h2>
       <ul>
-        <li>DonWeb aloja la web, con servidores en Argentina.</li>
-        <li>DonWeb administra las listas de correo y envía los mails mediante su servicio EnvíoSimple.</li>
+        <li>Vercel aloja la web.</li>
+        <li>Donweb procesa los formularios de suscripción, las listas de correo y los envíos mediante EnvíaloSimple.</li>
       </ul>
 
       <h2>Para qué los uso</h2>
