@@ -2,6 +2,8 @@
 
 Ruta: `/transparencia`. Fecha de corte: 19 de noviembre de 2026.
 
+[Vista previa en Vercel](https://valomi-git-propuesta-transparencia-noedenisels-projects.vercel.app/transparencia). Requiere iniciar sesión con acceso al proyecto. Las capturas de esta revisión corresponden al servidor local con el mismo código compilado; la protección de la vista previa se conserva.
+
 **No es una publicación definitiva.** Las indicaciones de VaLoMi requieren aprobación de Gabriel Armando Lombardo, titular de la organización, o de quien él designe. Esta entrega permanece en una rama de propuesta; no se integra en producción sin esa aprobación. La página muestra el aviso de revisión y lleva `noindex`.
 
 ## Resultado preparado
