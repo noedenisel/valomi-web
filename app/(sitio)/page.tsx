@@ -1,37 +1,22 @@
 import { FormularioContacto } from '@/components/FormularioContacto';
 import Link from 'next/link';
-import { reader, informesPublicados, seguimientoPublicado, esModoDesarrollo } from '@/lib/contenido';
+import { reader, informesPublicados, esModoDesarrollo } from '@/lib/contenido';
 import { etiquetaInforme, fechaCorta, fechaLarga, estaPendiente } from '@/lib/formato';
 import { Texto, Dato } from '@/components/Texto';
-import { Bloques } from '@/components/Bloques';
+import { FECHA_TRANSPARENCIA, SOLICITUDES, TOTAL_PUNTOS } from '@/lib/transparencia';
 import { Icono } from '@/components/Iconos';
 import { FilaInforme, InformeDestacado, SelloEjemplo } from '@/components/Informes';
 import { Medios, type ItemMedio } from '@/components/Medios';
 import { Suscripcion } from '@/components/Suscripcion';
 
 const TIPO_MEDIO = { prensa: 'Diario / portal', radio: 'Radio', tv: 'Televisión' } as const;
-const TIPO_SEGUIMIENTO = {
-  pedido: 'Pedido de acceso a la información',
-  reclamo: 'Reclamo presentado',
-  respuesta: 'Respuesta oficial',
-  avance: 'Avance',
-} as const;
-const SITUACION = {
-  presentado: 'Presentado',
-  'en-espera': 'En espera de respuesta',
-  respondido: 'Respondido',
-  parcial: 'Respondido en parte',
-  'sin-respuesta': 'Sin respuesta en el plazo',
-} as const;
-
 export default async function Inicio() {
-  const [qs, contacto, informes, medios, propuestas, seguimiento, videos] = await Promise.all([
+  const [qs, contacto, informes, medios, propuestas, videos] = await Promise.all([
     reader.singletons.quienesSomos.readOrThrow(),
     reader.singletons.contacto.readOrThrow(),
     informesPublicados(),
     reader.collections.medios.all(),
     reader.collections.propuestas.all(),
-    seguimientoPublicado(),
     reader.collections.videos.all(),
   ]);
   const [ultimo, ...anteriores] = informes;
@@ -360,43 +345,24 @@ export default async function Inicio() {
         </div>
       </section>
 
-      {/* 6. SEGUIMIENTO Y TRANSPARENCIA: oculta hasta que haya pedidos oficiales publicados */}
-      {seguimiento.length > 0 && (
+      {/* 6. SEGUIMIENTO Y TRANSPARENCIA */}
       <section id="seguimiento" className="seccion" aria-labelledby="seguimiento-titulo">
-        <div className="contenedor">
+        <div className="contenedor contenedor--angosto">
           <header className="seccion__cabecera">
             <p className="seccion__antetitulo">Seguimiento y transparencia</p>
-            <h2 id="seguimiento-titulo">Qué pedí y qué me respondieron</h2>
+            <h2 id="seguimiento-titulo">Qué pedimos y qué se responde</h2>
             <p className="seccion__bajada">
-              Publico los pedidos y reclamos que presento, y las respuestas oficiales.
-              Solo información documentada.
+              VaLoMi sigue {SOLICITUDES.length} solicitudes de acceso a la información pública sobre seguridad,
+              fondos y recursos en La Matanza: {TOTAL_PUNTOS} puntos documentales.
             </p>
           </header>
-          <ul className="seguimiento">
-              {seguimiento.map((s) => (
-                <li key={s.slug} className="seguimiento__item">
-                  <div className="seguimiento__meta">
-                    <span className="etiqueta">{TIPO_SEGUIMIENTO[s.tipo]}</span>
-                    <span className={`estado estado--${s.situacion}`}>{SITUACION[s.situacion]}</span>
-                    {s.esEjemplo && <SelloEjemplo />}
-                  </div>
-                  <h3>{s.titulo}</h3>
-                  <p className="seguimiento__datos">
-                    {fechaLarga(s.fecha)}
-                    {s.organismo && <> · <Texto>{s.organismo}</Texto></>}
-                  </p>
-                  <Bloques texto={s.descripcion} />
-                  {s.documento && (
-                    <a className="enlace" href={`/seguimiento/${s.slug}/documento`} target="_blank" rel="noopener">
-                      <Icono nombre="documento" /> Ver documento
-                    </a>
-                  )}
-                </li>
-              ))}
-          </ul>
+          <p>Al {fechaLarga(FECHA_TRANSPARENCIA)}, los {TOTAL_PUNTOS} puntos siguen pendientes de una respuesta de contenido.
+            Los requerimientos formales y los acuses se distinguen de la entrega de información.</p>
+          <p>Los estados, las actuaciones y las constancias pendientes se detallan en un solo registro.
+            Los plazos legales permanecen pendientes de verificación.</p>
+          <Link className="boton boton--primario" href="/transparencia">Ver Transparencia y Seguridad Pública</Link>
         </div>
       </section>
-      )}
 
       {/* 7. CONTACTO */}
       <section id="contacto" className="seccion seccion--gris" aria-labelledby="contacto-titulo">
