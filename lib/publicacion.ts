@@ -4,5 +4,5 @@ export function esProduccionPublica(entorno: { VERCEL_ENV?: string; VALOMI_ENTOR
   return entorno.VALOMI_ENTORNO === 'produccion';
 }
 export const URL_PUBLICA = 'https://valomi.com.ar';
-export const URL_MAPA = 'https://valomi-reportes.vercel.app/mapa';
-export const URL_REPORTAR = 'https://valomi-reportes.vercel.app/reportar';
+export const URL_MAPA = 'https://valomi.online/mapa';
+export const URL_REPORTAR = 'https://valomi.online/reportar';
