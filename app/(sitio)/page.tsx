@@ -1,3 +1,5 @@
+import type { Metadata } from 'next';
+import { URL_MAPA, URL_REPORTAR } from '@/lib/publicacion';
 import { FormularioContacto } from '@/components/FormularioContacto';
 import Link from 'next/link';
 import { reader, informesPublicados, seguimientoPublicado, esModoDesarrollo } from '@/lib/contenido';
@@ -8,6 +10,8 @@ import { Icono } from '@/components/Iconos';
 import { FilaInforme, InformeDestacado, SelloEjemplo } from '@/components/Informes';
 import { Medios, type ItemMedio } from '@/components/Medios';
 import { Suscripcion } from '@/components/Suscripcion';
+
+export const metadata: Metadata = { alternates: { canonical: '/' } };
 
 const TIPO_MEDIO = { prensa: 'Diario / portal', radio: 'Radio', tv: 'Televisión' } as const;
 const TIPO_SEGUIMIENTO = {
@@ -112,7 +116,8 @@ export default async function Inicio() {
             <div className="botones">
               <a href="#informes" className="boton boton--primario boton--grande">Ver el último informe</a>
               <a href="#propuestas" className="boton boton--claro boton--grande">Mis propuestas</a>
-              <a href="https://valomi.online/reportar" className="boton boton--claro boton--grande" target="_blank" rel="noopener noreferrer">Reportar un hecho</a>
+              <a href={URL_MAPA} className="boton boton--claro boton--grande" target="_blank" rel="noopener noreferrer" aria-label="Ver mapa de reportes (se abre en otra pestaña)">Ver mapa de reportes</a>
+              <a href={URL_REPORTAR} className="boton boton--claro boton--grande" target="_blank" rel="noopener noreferrer">Reportar un hecho</a>
             </div>
           </div>
           {ultimo && (
@@ -298,9 +303,17 @@ export default async function Inicio() {
             )}
           </div>
 
-          <div id="suscripcion" className="suscripcion">
+          <div id="boletin-prensa" className="suscripcion" aria-labelledby="boletin-prensa-titulo">
             <div>
-              <h3>Recibí el Informe VaLoMi</h3>
+              <h3 id="boletin-prensa-titulo">Recibí el Boletín de prensa</h3>
+              <p>Suscribite para recibir comunicados y materiales de prensa de VaLoMi en tu correo.</p>
+            </div>
+            <Suscripcion lista="prensa" />
+          </div>
+
+          <div id="suscripcion" className="suscripcion" aria-labelledby="suscripcion-titulo">
+            <div>
+              <h3 id="suscripcion-titulo">Recibí el Informe VaLoMi</h3>
               <p>Si querés recibir el informe semanal en tu correo, suscribite.</p>
             </div>
             <Suscripcion lista="informe" />

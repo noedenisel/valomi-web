@@ -4,6 +4,7 @@ import { FilaInforme } from '@/components/Informes';
 
 export const metadata: Metadata = {
   title: 'Informe VaLoMi',
+  alternates: { canonical: '/informes' },
   description: 'Archivo completo del Informe VaLoMi, con el PDF descargable y la versión web de cada número.',
 };
 
