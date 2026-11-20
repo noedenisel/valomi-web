@@ -23,4 +23,4 @@ Al revisar los formularios públicos, el formulario 1 tenía título de informe 
 
 La lista destinataria, la configuración de confirmación y la entrega efectiva de correos no son verificables desde la página pública sin acceder al panel o realizar un alta autorizada. La verificación realizada cubre la navegación hasta cada formulario, no un alta completa.
 
-Los cambios de Seguimiento continúan en el borrador independiente de la PR #3 y no forman parte de esta actualización.
+Esta entrega se preparó de forma independiente de Seguimiento. Su revisión en la PR #3 fue aprobada posteriormente para publicación el 20 de noviembre de 2026.

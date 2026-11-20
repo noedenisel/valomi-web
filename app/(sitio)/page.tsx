@@ -21,12 +21,19 @@ const TIPO_SEGUIMIENTO = {
   avance: 'Avance',
 } as const;
 const SITUACION = {
-  presentado: 'Presentado',
-  'en-espera': 'En espera de respuesta',
-  respondido: 'Respondido',
-  parcial: 'Respondido en parte',
-  'sin-respuesta': 'Sin respuesta en el plazo',
+  'solicitud-enviada': 'Solicitud enviada',
+  'recepcion-confirmada': 'Recepción confirmada',
+  'subsanacion-presentada': 'Subsanación presentada',
+  'tramite-registrado': 'Trámite registrado',
+  'en-plazo': 'En plazo de respuesta',
+  'prorroga-comunicada': 'Prórroga comunicada',
+  'respuesta-parcial': 'Respuesta parcial',
+  'respuesta-completa': 'Respuesta completa',
+  denegatoria: 'Denegatoria',
+  'plazo-vencido': 'Plazo vencido sin respuesta',
+  'reclamo-presentado': 'Reclamo presentado',
 } as const;
+const CORTE_SEGUIMIENTO = '2026-11-19';
 
 export default async function Inicio() {
   const [qs, contacto, informes, medios, propuestas, seguimiento, videos] = await Promise.all([
@@ -39,6 +46,8 @@ export default async function Inicio() {
     reader.collections.videos.all(),
   ]);
   const [ultimo, ...anteriores] = informes;
+  const solicitudesSeguimiento = seguimiento.filter((s) => s.tipo === 'pedido' && !s.esEjemplo);
+  const puntosSeguimiento = solicitudesSeguimiento.reduce((total, solicitud) => total + (solicitud.puntos ?? 0), 0);
   const mediosOrdenados = medios
     .map((m) => m.entry)
     .filter((m) => m.visible)
@@ -379,12 +388,19 @@ export default async function Inicio() {
         <div className="contenedor">
           <header className="seccion__cabecera">
             <p className="seccion__antetitulo">Seguimiento y transparencia</p>
-            <h2 id="seguimiento-titulo">Qué pedí y qué me respondieron</h2>
+            <h2 id="seguimiento-titulo">Qué pedimos y qué se responde</h2>
             <p className="seccion__bajada">
-              Publico los pedidos y reclamos que presento, y las respuestas oficiales.
-              Solo información documentada.
+              Seguimos las solicitudes de acceso a la información pública de VaLoMi sobre seguridad,
+              fondos y recursos en La Matanza. Distinguimos los actos de trámite de las respuestas sobre el contenido.
             </p>
           </header>
+          <p className="seguimiento__datos">
+            <strong>{solicitudesSeguimiento.length} solicitudes · {puntosSeguimiento} puntos documentales.</strong>{' '}
+            Última actualización: <time dateTime={CORTE_SEGUIMIENTO}>{fechaLarga(CORTE_SEGUIMIENTO)}</time>.
+          </p>
+          <p>Al {fechaLarga(CORTE_SEGUIMIENTO)}, los {puntosSeguimiento} puntos siguen pendientes de una respuesta de contenido.
+            Un pedido de requisitos formales, un acuse automático o la indicación de otro canal no equivalen a entregar la información pedida.</p>
+          <p><strong>Plazos pendientes de verificación.</strong> No se señala a un organismo como incumplidor sin verificar antes la fecha de recepción válida y el vencimiento legal.</p>
           <ul className="seguimiento">
               {seguimiento.map((s) => (
                 <li key={s.slug} className="seguimiento__item">
@@ -395,8 +411,12 @@ export default async function Inicio() {
                   </div>
                   <h3>{s.titulo}</h3>
                   <p className="seguimiento__datos">
-                    {fechaLarga(s.fecha)}
+                    Presentación original: {fechaLarga(s.fecha)}
                     {s.organismo && <> · <Texto>{s.organismo}</Texto></>}
+                  </p>
+                  <p className="seguimiento__datos">
+                    {s.puntos != null && <><strong>{s.puntos} puntos documentales.</strong>{' '}</>}
+                    {s.fechaActualizacion && <>Última actuación informada: <time dateTime={s.fechaActualizacion}>{fechaLarga(s.fechaActualizacion)}</time>.</>}
                   </p>
                   <Bloques texto={s.descripcion} />
                   {s.documento && (
@@ -407,6 +427,9 @@ export default async function Inicio() {
                 </li>
               ))}
           </ul>
+          <p className="seguimiento__datos">Fuente de esta carga: información de seguimiento aportada por VaLoMi,
+            con corte al {fechaLarga(CORTE_SEGUIMIENTO)}. Las constancias y los textos literales que faltan se indican en cada pedido.
+            Los documentos solo se incorporan cuando exista una versión pública sin datos personales ni información operativa sensible.</p>
         </div>
       </section>
       )}
