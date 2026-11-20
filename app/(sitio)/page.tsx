@@ -398,7 +398,6 @@ export default async function Inicio() {
             <strong>{solicitudesSeguimiento.length} solicitudes · {puntosSeguimiento} puntos documentales.</strong>{' '}
             Última actualización: <time dateTime={CORTE_SEGUIMIENTO}>{fechaLarga(CORTE_SEGUIMIENTO)}</time>.
           </p>
-          <p className="etiqueta">Actualización propuesta · pendiente de aprobación institucional</p>
           <p>Al {fechaLarga(CORTE_SEGUIMIENTO)}, los {puntosSeguimiento} puntos siguen pendientes de una respuesta de contenido.
             Un pedido de requisitos formales, un acuse automático o la indicación de otro canal no equivalen a entregar la información pedida.</p>
           <p><strong>Plazos pendientes de verificación.</strong> No se señala a un organismo como incumplidor sin verificar antes la fecha de recepción válida y el vencimiento legal.</p>

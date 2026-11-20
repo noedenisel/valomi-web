@@ -26,4 +26,4 @@ Compilación de Next.js y TypeScript en Production y Preview. Cinco combinacione
 - [Portada en escritorio](vistas/mapa-indexacion/portada-1440.png)
 - [Portada en móvil](vistas/mapa-indexacion/portada-390.png)
 
-Esta corrección es independiente del borrador de Seguimiento, que sigue pendiente de la aprobación institucional indicada por VaLoMi.
+Esta entrega se preparó de forma independiente de Seguimiento. Su revisión en la PR #3 fue aprobada posteriormente para publicación el 20 de noviembre de 2026.

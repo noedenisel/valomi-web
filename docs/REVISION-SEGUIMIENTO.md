@@ -1,4 +1,4 @@
-# Actualización de Seguimiento · propuesta para aprobación
+# Actualización de Seguimiento · revisión aprobada
 
 Se actualiza la sección existente de la portada, `/#seguimiento`. No se crea otra página ni otro enlace de menú. El CSS y la presentación de las tarjetas existentes se conservan.
 
@@ -40,4 +40,6 @@ El gestor de contenido conserva los once estados cerrados y añade campos opcion
 
 Compilación Next.js y TypeScript correctas. Navegador Chromium en 1440, 1000, 768, 390 y 360 px: seis tarjetas, cantidades, estados y fechas exactos, reservas documentales, resumen de 46 puntos, navegación original y ausencia de vencimientos inventados. Sin errores JavaScript ni desborde horizontal de página. No hay formularios ni descargas documentales en el bloque; el ejemplo no aparece. La ruta adicional devuelve 404 y no existe un enlace nuevo en la navegación.
 
-Esta propuesta no se publica de forma definitiva hasta que Gabriel Armando Lombardo o quien él designe la apruebe, según las indicaciones recibidas. Producción y el dominio se conservan.
+La usuaria aprobó esta revisión para publicación el 20 de noviembre de 2026. Se retira el rótulo provisional de aprobación pendiente. Los datos conservan su corte del 19 de noviembre y todas sus reservas documentales; la aprobación de la revisión no acredita nuevas actuaciones ni verifica las constancias que faltan.
+
+La integración conserva el botón superior REPORTAR HECHO, los accesos al mapa real, ambas suscripciones de EnvíaloSimple, la indexación de producción y las descargas de los cuatro informes.
