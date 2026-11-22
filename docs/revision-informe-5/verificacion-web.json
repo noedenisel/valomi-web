@@ -6,590 +6,31 @@
   "requests": "GET/HEAD only; no forms, subscriptions, emails or uploads submitted; all browser mutations blocked",
   "source_html_sha256": "084e5d24d7aff5a3d200bc071908bd9b99947f11f5844aa5db592de423823849",
   "passed": true,
-  "failures": [],
   "checks_count": 142,
-  "checks": [
-    {
-      "check": "web:HTTP200 PDF",
-      "passed": true
-    },
-    {
-      "check": "web:HTTP bytes equal file",
-      "passed": true
-    },
-    {
-      "check": "web:page count3",
-      "passed": true
-    },
-    {
-      "check": "prensa:HTTP200 PDF",
-      "passed": true
-    },
-    {
-      "check": "prensa:HTTP bytes equal file",
-      "passed": true
-    },
-    {
-      "check": "prensa:page count2",
-      "passed": true
-    },
-    {
-      "check": "original_web:HTTP200 PDF",
-      "passed": true
-    },
-    {
-      "check": "original_web:HTTP bytes equal file",
-      "passed": true
-    },
-    {
-      "check": "original_web:page count2",
-      "passed": true
-    },
-    {
-      "check": "original_prensa:HTTP200 PDF",
-      "passed": true
-    },
-    {
-      "check": "original_prensa:HTTP bytes equal file",
-      "passed": true
-    },
-    {
-      "check": "original_prensa:page count2",
-      "passed": true
-    },
-    {
-      "check": "web/prensa genuinely different PDFs",
-      "passed": true
-    },
-    {
-      "check": "legacy1:PDF bytes unchanged",
-      "passed": true
-    },
-    {
-      "check": "legacy2:PDF bytes unchanged",
-      "passed": true
-    },
-    {
-      "check": "legacy3:PDF bytes unchanged",
-      "passed": true
-    },
-    {
-      "check": "legacy4:PDF bytes unchanged",
-      "passed": true
-    },
-    {
-      "check": "sitemap10 URLs",
-      "passed": true
-    },
-    {
-      "check": "sitemap includes report5",
-      "passed": true
-    },
-    {
-      "check": "production indexation robots",
-      "passed": true
-    },
-    {
-      "check": "1440:home200",
-      "passed": true
-    },
-    {
-      "check": "1440:home latest5",
-      "passed": true,
-      "details": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026"
-    },
-    {
-      "check": "1440:hero latest5",
-      "passed": true
-    },
-    {
-      "check": "1440:Seguimiento unchanged",
-      "passed": true,
-      "criterion": "DOM text nodes joined in source order, whitespace normalized; same as archived HTML baseline"
-    },
-    {
-      "check": "1440:Reportar access preserved",
-      "passed": true
-    },
-    {
-      "check": "1440:real map preserved",
-      "passed": true
-    },
-    {
-      "check": "1440:EnvíaloSimple informe exact",
-      "passed": true
-    },
-    {
-      "check": "1440:EnvíaloSimple prensa exact",
-      "passed": true
-    },
-    {
-      "check": "1440:home no page overflow",
-      "passed": true
-    },
-    {
-      "check": "1440:archive five reports",
-      "passed": true
-    },
-    {
-      "check": "1440:archive latest5",
-      "passed": true
-    },
-    {
-      "check": "1440:archive no page overflow",
-      "passed": true
-    },
-    {
-      "check": "1440:report5 HTTP200",
-      "passed": true
-    },
-    {
-      "check": "1440:one vv article",
-      "passed": true
-    },
-    {
-      "check": "1440:entire DOM text equals source",
-      "passed": true
-    },
-    {
-      "check": "1440:all source URLs exact",
-      "passed": true
-    },
-    {
-      "check": "1440:three source tables",
-      "passed": true
-    },
-    {
-      "check": "1440:table1 all cells exact",
-      "passed": true
-    },
-    {
-      "check": "1440:table1 local overflow enabled",
-      "passed": true
-    },
-    {
-      "check": "1440:table1 keyboard focus",
-      "passed": true
-    },
-    {
-      "check": "1440:table2 all cells exact",
-      "passed": true
-    },
-    {
-      "check": "1440:table2 local overflow enabled",
-      "passed": true
-    },
-    {
-      "check": "1440:table2 keyboard focus",
-      "passed": true
-    },
-    {
-      "check": "1440:table3 all cells exact",
-      "passed": true
-    },
-    {
-      "check": "1440:table3 local overflow enabled",
-      "passed": true
-    },
-    {
-      "check": "1440:table3 keyboard focus",
-      "passed": true
-    },
-    {
-      "check": "1440:report5 no page overflow",
-      "passed": true
-    },
-    {
-      "check": "1440:two distinct download buttons",
-      "passed": true
-    },
-    {
-      "check": "1440:web pagination label3",
-      "passed": true
-    },
-    {
-      "check": "1440:original web link",
-      "passed": true
-    },
-    {
-      "check": "1440:no false revised label",
-      "passed": true
-    },
-    {
-      "check": "legacy1:entire text unchanged",
-      "passed": true
-    },
-    {
-      "check": "legacy1:revised label retained",
-      "passed": true
-    },
-    {
-      "check": "legacy1:hash displayed unchanged",
-      "passed": true
-    },
-    {
-      "check": "legacy1:no overflow",
-      "passed": true
-    },
-    {
-      "check": "report5 existing N1 style exact",
-      "passed": true
-    },
-    {
-      "check": "legacy2:entire text unchanged",
-      "passed": true
-    },
-    {
-      "check": "legacy2:revised label retained",
-      "passed": true
-    },
-    {
-      "check": "legacy2:hash displayed unchanged",
-      "passed": true
-    },
-    {
-      "check": "legacy2:no overflow",
-      "passed": true
-    },
-    {
-      "check": "legacy3:entire text unchanged",
-      "passed": true
-    },
-    {
-      "check": "legacy3:revised label retained",
-      "passed": true
-    },
-    {
-      "check": "legacy3:hash displayed unchanged",
-      "passed": true
-    },
-    {
-      "check": "legacy3:no overflow",
-      "passed": true
-    },
-    {
-      "check": "legacy4:entire text unchanged",
-      "passed": true
-    },
-    {
-      "check": "legacy4:revised label retained",
-      "passed": true
-    },
-    {
-      "check": "legacy4:hash displayed unchanged",
-      "passed": true
-    },
-    {
-      "check": "legacy4:no overflow",
-      "passed": true
-    },
-    {
-      "check": "1440:no JS exceptions",
-      "passed": true,
-      "details": []
-    },
-    {
-      "check": "1440:no attempted form submissions",
-      "passed": true,
-      "details": []
-    },
-    {
-      "check": "390:home200",
-      "passed": true
-    },
-    {
-      "check": "390:home latest5",
-      "passed": true,
-      "details": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026"
-    },
-    {
-      "check": "390:hero latest5",
-      "passed": true
-    },
-    {
-      "check": "390:Seguimiento unchanged",
-      "passed": true,
-      "criterion": "DOM text nodes joined in source order, whitespace normalized; same as archived HTML baseline"
-    },
-    {
-      "check": "390:Reportar access preserved",
-      "passed": true
-    },
-    {
-      "check": "390:real map preserved",
-      "passed": true
-    },
-    {
-      "check": "390:EnvíaloSimple informe exact",
-      "passed": true
-    },
-    {
-      "check": "390:EnvíaloSimple prensa exact",
-      "passed": true
-    },
-    {
-      "check": "390:home no page overflow",
-      "passed": true
-    },
-    {
-      "check": "390:archive five reports",
-      "passed": true
-    },
-    {
-      "check": "390:archive latest5",
-      "passed": true
-    },
-    {
-      "check": "390:archive no page overflow",
-      "passed": true
-    },
-    {
-      "check": "390:report5 HTTP200",
-      "passed": true
-    },
-    {
-      "check": "390:one vv article",
-      "passed": true
-    },
-    {
-      "check": "390:entire DOM text equals source",
-      "passed": true
-    },
-    {
-      "check": "390:all source URLs exact",
-      "passed": true
-    },
-    {
-      "check": "390:three source tables",
-      "passed": true
-    },
-    {
-      "check": "390:table1 all cells exact",
-      "passed": true
-    },
-    {
-      "check": "390:table1 local overflow enabled",
-      "passed": true
-    },
-    {
-      "check": "390:table1 keyboard focus",
-      "passed": true
-    },
-    {
-      "check": "390:table1 local keyboard scroll",
-      "passed": true
-    },
-    {
-      "check": "390:table2 all cells exact",
-      "passed": true
-    },
-    {
-      "check": "390:table2 local overflow enabled",
-      "passed": true
-    },
-    {
-      "check": "390:table2 keyboard focus",
-      "passed": true
-    },
-    {
-      "check": "390:table2 local keyboard scroll",
-      "passed": true
-    },
-    {
-      "check": "390:table3 all cells exact",
-      "passed": true
-    },
-    {
-      "check": "390:table3 local overflow enabled",
-      "passed": true
-    },
-    {
-      "check": "390:table3 keyboard focus",
-      "passed": true
-    },
-    {
-      "check": "390:table3 local keyboard scroll",
-      "passed": true
-    },
-    {
-      "check": "390:report5 no page overflow",
-      "passed": true
-    },
-    {
-      "check": "390:two distinct download buttons",
-      "passed": true
-    },
-    {
-      "check": "390:web pagination label3",
-      "passed": true
-    },
-    {
-      "check": "390:original web link",
-      "passed": true
-    },
-    {
-      "check": "390:no false revised label",
-      "passed": true
-    },
-    {
-      "check": "390:no JS exceptions",
-      "passed": true,
-      "details": []
-    },
-    {
-      "check": "390:no attempted form submissions",
-      "passed": true,
-      "details": []
-    },
-    {
-      "check": "360:home200",
-      "passed": true
-    },
-    {
-      "check": "360:home latest5",
-      "passed": true,
-      "details": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026"
-    },
-    {
-      "check": "360:hero latest5",
-      "passed": true
-    },
-    {
-      "check": "360:Seguimiento unchanged",
-      "passed": true,
-      "criterion": "DOM text nodes joined in source order, whitespace normalized; same as archived HTML baseline"
-    },
-    {
-      "check": "360:Reportar access preserved",
-      "passed": true
-    },
-    {
-      "check": "360:real map preserved",
-      "passed": true
-    },
-    {
-      "check": "360:EnvíaloSimple informe exact",
-      "passed": true
-    },
-    {
-      "check": "360:EnvíaloSimple prensa exact",
-      "passed": true
-    },
-    {
-      "check": "360:home no page overflow",
-      "passed": true
-    },
-    {
-      "check": "360:archive five reports",
-      "passed": true
-    },
-    {
-      "check": "360:archive latest5",
-      "passed": true
-    },
-    {
-      "check": "360:archive no page overflow",
-      "passed": true
-    },
-    {
-      "check": "360:report5 HTTP200",
-      "passed": true
-    },
-    {
-      "check": "360:one vv article",
-      "passed": true
-    },
-    {
-      "check": "360:entire DOM text equals source",
-      "passed": true
-    },
-    {
-      "check": "360:all source URLs exact",
-      "passed": true
-    },
-    {
-      "check": "360:three source tables",
-      "passed": true
-    },
-    {
-      "check": "360:table1 all cells exact",
-      "passed": true
-    },
-    {
-      "check": "360:table1 local overflow enabled",
-      "passed": true
-    },
-    {
-      "check": "360:table1 keyboard focus",
-      "passed": true
-    },
-    {
-      "check": "360:table1 local keyboard scroll",
-      "passed": true
-    },
-    {
-      "check": "360:table2 all cells exact",
-      "passed": true
-    },
-    {
-      "check": "360:table2 local overflow enabled",
-      "passed": true
-    },
-    {
-      "check": "360:table2 keyboard focus",
-      "passed": true
-    },
-    {
-      "check": "360:table2 local keyboard scroll",
-      "passed": true
-    },
-    {
-      "check": "360:table3 all cells exact",
-      "passed": true
-    },
-    {
-      "check": "360:table3 local overflow enabled",
-      "passed": true
-    },
-    {
-      "check": "360:table3 keyboard focus",
-      "passed": true
-    },
-    {
-      "check": "360:table3 local keyboard scroll",
-      "passed": true
-    },
-    {
-      "check": "360:report5 no page overflow",
-      "passed": true
-    },
-    {
-      "check": "360:two distinct download buttons",
-      "passed": true
-    },
-    {
-      "check": "360:web pagination label3",
-      "passed": true
-    },
-    {
-      "check": "360:original web link",
-      "passed": true
-    },
-    {
-      "check": "360:no false revised label",
-      "passed": true
-    },
-    {
-      "check": "360:no JS exceptions",
-      "passed": true,
-      "details": []
-    },
-    {
-      "check": "360:no attempted form submissions",
-      "passed": true,
-      "details": []
-    }
+  "failures": [],
+  "screenshots": [
+    "web-1440.png",
+    "web-390.png"
   ],
+  "known_pending": "Logo original exacto no disponible; PDF sin marca de agua, conforme al estado documentado de revisión.",
+  "verified": {
+    "entire_dom_text_and_source_links_exact_in_all_sizes": true,
+    "three_tables_all_cells_exact": true,
+    "table_data_rows": [
+      3,
+      2,
+      4
+    ],
+    "existing_N1_style_retained": true,
+    "home_and_archive_report5_first": true,
+    "archive_reports_count": 5,
+    "report1_to4_text_and_primary_PDF_hashes_unchanged": true,
+    "Seguimiento_identical_to_approved_production_baseline": true,
+    "real_map_Reportar_and_EnvialoSimple_lists1_2_preserved": true,
+    "sitemap_urls": 10,
+    "robots_public_indexation": true,
+    "no_form_submissions_or_emails_or_uploads": true
+  },
   "browser": [
     {
       "width": 1440,
@@ -706,151 +147,83 @@
       "mutations_blocked": []
     }
   ],
-  "http": {
-    "downloads": [
-      {
-        "requested_url": "http://localhost:3019/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/pdf?archivo=pdf-diseno.pdf",
-        "final_url": "http://localhost:3019/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/pdf?archivo=pdf-diseno.pdf",
-        "status": 200,
-        "content_type": "application/pdf",
-        "cache_control": "public, max-age=300, must-revalidate",
-        "sha256": "b4e1c2f8db9758218379a962f30a1b7ba65ac750d681985221349f946f5f0505",
-        "bytes": 66487,
-        "label": "web",
-        "pages": 3,
-        "same_as_file": true
-      },
-      {
-        "requested_url": "http://localhost:3019/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/prensa?archivo=prensa.pdf",
-        "final_url": "http://localhost:3019/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/prensa?archivo=prensa.pdf",
-        "status": 200,
-        "content_type": "application/pdf",
-        "cache_control": "public, max-age=300, must-revalidate",
-        "sha256": "54103e698e908c70daa4e25e01bae0d719ec7bef321ca644092c16047d578f65",
-        "bytes": 58042,
-        "label": "prensa",
-        "pages": 2,
-        "same_as_file": true
-      },
-      {
-        "requested_url": "http://localhost:3019/documentos/originales/informe-5-web.pdf",
-        "final_url": "http://localhost:3019/documentos/originales/informe-5-web.pdf",
-        "status": 200,
-        "content_type": "application/pdf",
-        "cache_control": "public, max-age=0",
-        "sha256": "53ebad4972934bcd252a900ce21ef3add7dbafc9a5cc2e97290dcabdc222f134",
-        "bytes": 62944,
-        "label": "original_web",
-        "pages": 2,
-        "same_as_file": true
-      },
-      {
-        "requested_url": "http://localhost:3019/documentos/originales/informe-5-prensa.pdf",
-        "final_url": "http://localhost:3019/documentos/originales/informe-5-prensa.pdf",
-        "status": 200,
-        "content_type": "application/pdf",
-        "cache_control": "public, max-age=0",
-        "sha256": "98b265e0cbdf3d9228b36f2780467dece67af72b915644caa0abcbb65f47e5bd",
-        "bytes": 56656,
-        "label": "original_prensa",
-        "pages": 2,
-        "same_as_file": true
-      },
-      {
-        "label": "legacy1",
-        "requested_url": "http://localhost:3019/informes/informe-valomi-n-1-octubre-2026/pdf?archivo=pdf-v2.pdf",
-        "final_url": "http://localhost:3019/informes/informe-valomi-n-1-octubre-2026/pdf?archivo=pdf-v2.pdf",
-        "status": 200,
-        "content_type": "application/pdf",
-        "cache_control": "public, max-age=300, must-revalidate",
-        "sha256": "5ea1d5d77cd1019071174d26e149afce8390461cf562e06352d362e424b4ca0f",
-        "bytes": 42163
-      },
-      {
-        "label": "legacy2",
-        "requested_url": "http://localhost:3019/informes/informe-valomi-n-2-semana-del-26-10-al-01-11-2026/pdf?archivo=pdf-v2.pdf",
-        "final_url": "http://localhost:3019/informes/informe-valomi-n-2-semana-del-26-10-al-01-11-2026/pdf?archivo=pdf-v2.pdf",
-        "status": 200,
-        "content_type": "application/pdf",
-        "cache_control": "public, max-age=300, must-revalidate",
-        "sha256": "c728a76ea18cb9300ede894e4e4cf8b67df0f0e0cc13c7047e6be22475b131e1",
-        "bytes": 43596
-      },
-      {
-        "label": "legacy3",
-        "requested_url": "http://localhost:3019/informes/informe-valomi-n-3-semana-del-02-11-al-08-11-2026/pdf?archivo=pdf-v2.pdf",
-        "final_url": "http://localhost:3019/informes/informe-valomi-n-3-semana-del-02-11-al-08-11-2026/pdf?archivo=pdf-v2.pdf",
-        "status": 200,
-        "content_type": "application/pdf",
-        "cache_control": "public, max-age=300, must-revalidate",
-        "sha256": "5fd6ca9207b677e8e3f81215bdba0e9014b42dceaa064414e4d7771d268aa9f8",
-        "bytes": 32881
-      },
-      {
-        "label": "legacy4",
-        "requested_url": "http://localhost:3019/informes/informe-valomi-n-4-semana-del-09-11-al-15-11-2026/pdf?archivo=pdf-v2.pdf",
-        "final_url": "http://localhost:3019/informes/informe-valomi-n-4-semana-del-09-11-al-15-11-2026/pdf?archivo=pdf-v2.pdf",
-        "status": 200,
-        "content_type": "application/pdf",
-        "cache_control": "public, max-age=300, must-revalidate",
-        "sha256": "48959ffb69a90b21b7a299cc193bc8b81c88887684180d6bcff2f6ff7155e027",
-        "bytes": 36196
-      }
-    ],
-    "sitemap_urls": [
-      "https://valomi.com.ar/",
-      "https://valomi.com.ar/informes",
-      "https://valomi.com.ar/privacidad",
-      "https://valomi.com.ar/terminos",
-      "https://valomi.com.ar/aviso-legal",
-      "https://valomi.com.ar/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026",
-      "https://valomi.com.ar/informes/informe-valomi-n-4-semana-del-09-11-al-15-11-2026",
-      "https://valomi.com.ar/informes/informe-valomi-n-3-semana-del-02-11-al-08-11-2026",
-      "https://valomi.com.ar/informes/informe-valomi-n-2-semana-del-26-10-al-01-11-2026",
-      "https://valomi.com.ar/informes/informe-valomi-n-1-octubre-2026"
-    ],
-    "robots_txt": "User-Agent: *\nAllow: /\nDisallow: /api/\nDisallow: /keystatic/\n\nSitemap: https://valomi.com.ar/sitemap.xml\n",
-    "external_sources": [
-      {
-        "requested_url": "https://eloperativo.com/2026/11/16/lomas-del-mirador/asaltaron-a-un-motociclista-y-le-robaron-su-herramienta-de-trabajo/",
-        "final_url": "https://eloperativo.com/2026/11/16/lomas-del-mirador/asaltaron-a-un-motociclista-y-le-robaron-su-herramienta-de-trabajo/",
-        "status": 200,
-        "content_type": "text/html; charset=UTF-8",
-        "cache_control": null,
-        "sha256": "330898173cc542b0b05ddf9c82b7761436e5372fa8f107de647567f054d80202",
-        "bytes": 103952
-      },
-      {
-        "requested_url": "https://buenosairesnoticia.com.ar/nota/9301/a-las-patadas-motochorros-le-robaron-a-un-delivery-en-la-matanza/",
-        "final_url": "https://buenosairesnoticia.com.ar/nota/9301/a-las-patadas-motochorros-le-robaron-a-un-delivery-en-la-matanza/",
-        "status": 403,
-        "content_type": "text/plain; charset=UTF-8",
-        "cache_control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
-        "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c",
-        "bytes": 17
-      }
-    ]
-  },
-  "screenshots": [
-    "web-1440.png",
-    "web-390.png"
-  ],
-  "known_pending": "Logo original exacto no disponible; PDF sin marca de agua, conforme al estado documentado de revisión.",
-  "followup_whitespace_validation": [
+  "downloads": [
     {
-      "width": 1440,
-      "passed": true,
-      "criterion": "DOM text nodes joined in source order, whitespace normalized; same as archived HTML baseline"
+      "label": "web",
+      "status": 200,
+      "content_type": "application/pdf",
+      "sha256": "b4e1c2f8db9758218379a962f30a1b7ba65ac750d681985221349f946f5f0505",
+      "bytes": 66487,
+      "pages": 3,
+      "same_as_file": true
     },
     {
-      "width": 390,
-      "passed": true,
-      "criterion": "DOM text nodes joined in source order, whitespace normalized; same as archived HTML baseline"
+      "label": "prensa",
+      "status": 200,
+      "content_type": "application/pdf",
+      "sha256": "54103e698e908c70daa4e25e01bae0d719ec7bef321ca644092c16047d578f65",
+      "bytes": 58042,
+      "pages": 2,
+      "same_as_file": true
     },
     {
-      "width": 360,
-      "passed": true,
-      "criterion": "DOM text nodes joined in source order, whitespace normalized; same as archived HTML baseline"
+      "label": "original_web",
+      "status": 200,
+      "content_type": "application/pdf",
+      "sha256": "53ebad4972934bcd252a900ce21ef3add7dbafc9a5cc2e97290dcabdc222f134",
+      "bytes": 62944,
+      "pages": 2,
+      "same_as_file": true
+    },
+    {
+      "label": "original_prensa",
+      "status": 200,
+      "content_type": "application/pdf",
+      "sha256": "98b265e0cbdf3d9228b36f2780467dece67af72b915644caa0abcbb65f47e5bd",
+      "bytes": 56656,
+      "pages": 2,
+      "same_as_file": true
+    },
+    {
+      "label": "legacy1",
+      "status": 200,
+      "content_type": "application/pdf",
+      "sha256": "5ea1d5d77cd1019071174d26e149afce8390461cf562e06352d362e424b4ca0f",
+      "bytes": 42163
+    },
+    {
+      "label": "legacy2",
+      "status": 200,
+      "content_type": "application/pdf",
+      "sha256": "c728a76ea18cb9300ede894e4e4cf8b67df0f0e0cc13c7047e6be22475b131e1",
+      "bytes": 43596
+    },
+    {
+      "label": "legacy3",
+      "status": 200,
+      "content_type": "application/pdf",
+      "sha256": "5fd6ca9207b677e8e3f81215bdba0e9014b42dceaa064414e4d7771d268aa9f8",
+      "bytes": 32881
+    },
+    {
+      "label": "legacy4",
+      "status": 200,
+      "content_type": "application/pdf",
+      "sha256": "48959ffb69a90b21b7a299cc193bc8b81c88887684180d6bcff2f6ff7155e027",
+      "bytes": 36196
     }
-  ]
+  ],
+  "external_sources": [
+    {
+      "url": "https://eloperativo.com/2026/11/16/lomas-del-mirador/asaltaron-a-un-motociclista-y-le-robaron-su-herramienta-de-trabajo/",
+      "status": 200,
+      "original_URL_preserved": true
+    },
+    {
+      "url": "https://buenosairesnoticia.com.ar/nota/9301/a-las-patadas-motochorros-le-robaron-a-un-delivery-en-la-matanza/",
+      "status": 403,
+      "original_URL_preserved": true
+    }
+  ],
+  "external_limit": "Buenos Aires Noticia devuelve HTTP403 a la consulta automatizada; no se sustituyó ni alteró su URL original."
 }
