@@ -23,6 +23,10 @@ Capturas de los PDF: [web, página 1](revision-informe-5/web-pdf-pagina-1.png) y
 
 Ruta web de la vista previa: `/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026`. La ficha ofrece la descarga web y una segunda descarga específica para prensa. El informe 5 se incorpora automáticamente al archivo, la portada y el sitemap según su fecha.
 
+[Abrir vista previa en Vercel](https://valomi-git-informe-5-2026-11-22-noedenisels-projects.vercel.app/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026). [PR de revisión n.º 8](https://github.com/noedenisel/valomi-web/pull/8), en borrador. El despliegue del primer commit terminó correctamente según la integración de Vercel en GitHub. La vista previa requiere iniciar sesión en Vercel; no se desactivó su protección.
+
+Las pruebas de navegación y descargas corresponden a la compilación local. No se pudo ejecutar la navegación autenticada del despliegue: el acceso del conector al equipo devuelve 403 y el intento de autorización devuelve 404 «Team not found». GitHub autentica correctamente como `noedenisel` y genera la vista previa en el proyecto existente. El dominio y la rama de producción no se modificaron.
+
 ## Controles
 
 - Comparación completa fuente→HTML→PDF: secuencias de 770 tokens en web y 597 en prensa; 61 y 51 bloques y celdas respectivamente, en el mismo orden. Se retiran únicamente los pies de paginación originales y un encabezado repetido al continuar una tabla.
@@ -31,8 +35,11 @@ Ruta web de la vista previa: `/informes/informe-valomi-n-5-semana-del-16-11-al-2
 - Compilación con `VERCEL_ENV=production npm run build`, comprobación TypeScript y `git diff --check` correctos. El guard opcional antiguo `VALOMI_ENTORNO=produccion` detecta un ejemplo preexistente del Observatorio que el runtime de producción ya excluye; ese contenido y ese guard no se modificaron en esta entrega.
 - Las rutas de descarga finales devuelven HTTP 200 y `application/pdf`; sus bytes coinciden con los archivos revisados. Las consultas `archivo` no seleccionan rutas arbitrarias; los informes inexistentes devuelven 404.
 - Los 19 archivos anteriores cotejados contra `origin/main` —CSS global, HTML de informes, PDF y documentos archivados— permanecen idénticos.
+- Navegación en Chromium a 1440, 390 y 360 px: 142 controles correctos. Texto completo del artículo y todas las celdas contrastados con el HTML canónico; las tablas admiten desplazamiento local con teclado y no desbordan la página. Sin excepciones JavaScript detectadas. Portada y archivo muestran primero el informe 5; sitemap de 10 URL. Seguimiento, acceso al mapa y enlaces de las dos suscripciones se conservan. No se enviaron formularios, correos ni reportes.
 
-Evidencias: [auditoría de PDF y huellas completas](revision-informe-5/verificacion-pdf.json) y [descargas comprobadas](revision-informe-5/descargas-local.json).
+La consulta externa de las fuentes devolvió 200 para El Operativo y 403 para Buenos Aires Noticia desde este entorno automatizado. Se conservaron ambos enlaces originales; el 403 no permite afirmar que la página sea accesible en esta verificación ni justifica cambiar el contenido del informe.
+
+Evidencias: [auditoría de PDF y huellas completas](revision-informe-5/verificacion-pdf.json), [descargas comprobadas](revision-informe-5/descargas-local.json) y [142 controles web](revision-informe-5/verificacion-web.json). Capturas: [escritorio](revision-informe-5/web-1440.png) y [móvil](revision-informe-5/web-390.png).
 
 ## Logo pendiente
 
