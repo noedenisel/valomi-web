@@ -50,6 +50,9 @@ export async function seguimientoPublicado(): Promise<Seguimiento[]> {
 export const rutaPdfInforme = (slug: string, archivo: string) =>
   join(process.cwd(), 'content', 'informes-pdf', slug, archivo);
 
+export const rutaPdfPrensa = (slug: string, archivo: string) =>
+  join(process.cwd(), 'content', 'informes-prensa', slug, archivo);
+
 export const rutaVersionWeb = (slug: string, archivo: string) =>
   join(process.cwd(), 'content', 'informes-html', slug, archivo);
 

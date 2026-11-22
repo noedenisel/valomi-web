@@ -58,6 +58,11 @@ export default config({
           directory: 'content/informes-pdf',
           validation: { isRequired: true },
         }),
+        pdfPrensa: fields.file({
+          label: 'PDF para prensa (opcional)',
+          description: 'La edición para prensa del informe, cuando esté disponible.',
+          directory: 'content/informes-prensa',
+        }),
         paginas: fields.integer({ label: 'Cantidad de páginas del PDF' }),
         versionWeb: fields.file({
           label: 'Versión web (archivo HTML)',

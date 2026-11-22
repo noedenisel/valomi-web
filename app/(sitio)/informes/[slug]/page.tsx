@@ -50,6 +50,7 @@ export default async function PaginaInforme({ params }: Props) {
 
   const { bytes, sha256 } = await datosPdf(i.slug, i.pdf);
   const html = await versionWeb(i.slug, i.versionWeb);
+  const edicionRevisada = i.numero !== null && i.numero >= 1 && i.numero <= 4;
   return (
     <section className="seccion pagina">
       <div className="contenedor">
@@ -65,7 +66,11 @@ export default async function PaginaInforme({ params }: Props) {
         <div className="informe-detalle">
           <div className="informe-detalle__lateral">
             <BotonesPdf informe={i} bytes={bytes} />
-            {i.numero === 4 && <p><a href="/documentos/informe-4-prensa.pdf?edicion=contraste-v2" download>Descargar PDF para prensa (misma edición revisada)</a></p>}
+            {i.pdfPrensa ? (
+              <p><a href={`/informes/${i.slug}/prensa?archivo=${encodeURIComponent(i.pdfPrensa)}`} download={`VaLoMi-${i.slug}-prensa.pdf`}>Descargar PDF para prensa</a></p>
+            ) : i.numero === 4 && (
+              <p><a href="/documentos/informe-4-prensa.pdf?edicion=contraste-v2" download>Descargar PDF para prensa (misma edición revisada)</a></p>
+            )}
             {i.resumen && <ResumenRotulado texto={i.resumen} />}
             {i.correcciones.length > 0 && (
               <div className="erratas">
@@ -80,9 +85,11 @@ export default async function PaginaInforme({ params }: Props) {
               </div>
             )}
             <div className="original">
-              <h2>Documento revisado</h2>
-              <p>La descarga corresponde a la edición revisada con la tabla de contrastación ciudadana, también publicada en esta página.</p>
-              <p><a href={`/documentos/originales/informe-${i.numero}-web.pdf`}>Consultar PDF anterior (archivo)</a></p>
+              <h2>{edicionRevisada ? 'Documento revisado' : 'Edición web'}</h2>
+              <p>{edicionRevisada
+                ? 'La descarga corresponde a la edición revisada con la tabla de contrastación ciudadana, también publicada en esta página.'
+                : 'La descarga corresponde a la edición web del informe, también publicada en esta página.'}</p>
+              <p><a href={`/documentos/originales/informe-${i.numero}-web.pdf`}>{edicionRevisada ? 'Consultar PDF anterior (archivo)' : 'Consultar PDF original recibido (archivo)'}</a></p>
               <p className="original__huella">
                 Huella SHA-256 del PDF descargable:
                 <code>{sha256}</code>
@@ -91,7 +98,7 @@ export default async function PaginaInforme({ params }: Props) {
           </div>
           {html ? (
             <div id="version-web" className="version-web">
-              <p className="version-web__rotulo">Versión web del informe · edición revisada con contrastación ciudadana</p>
+              <p className="version-web__rotulo">{edicionRevisada ? 'Versión web del informe · edición revisada con contrastación ciudadana' : 'Versión web del informe · edición web'}</p>
               <div dangerouslySetInnerHTML={{ __html: html }} />
             </div>
           ) : (

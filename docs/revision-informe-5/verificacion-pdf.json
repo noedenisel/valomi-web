@@ -1,0 +1,121 @@
+{
+  "informe": 5,
+  "fecha_revision_utc": "2026-11-22T21:27:48.910514+00:00",
+  "alcance": "Control de las maquetas PDF separadas frente a cada original, con revisión visual de todas sus páginas.",
+  "versiones": {
+    "web": {
+      "pdf": "content/informes-pdf/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/pdf-diseno.pdf",
+      "sha256": "b4e1c2f8db9758218379a962f30a1b7ba65ac750d681985221349f946f5f0505",
+      "bytes": 66487,
+      "paginas": 3,
+      "original": "public/documentos/originales/informe-5-web.pdf",
+      "sha256_original": "53ebad4972934bcd252a900ce21ef3add7dbafc9a5cc2e97290dcabdc222f134",
+      "tokens_en_orden": 770,
+      "secuencia_completa_identica": true,
+      "bloques_y_celdas_en_orden": 61,
+      "tres_tablas_identicas_celda_por_celda": true,
+      "filas_de_datos": [
+        3,
+        2,
+        4
+      ],
+      "urls_activas_exactas": [
+        "https://buenosairesnoticia.com.ar/nota/9301/a-las-patadas-motochorros-le-robaron-a-un-delivery-en-la-matanza/",
+        "https://eloperativo.com/2026/11/16/lomas-del-mirador/asaltaron-a-un-motociclista-y-le-robaron-su-herramienta-de-trabajo/"
+      ],
+      "todos_los_caracteres_originales_representados": true,
+      "fuentes_incorporadas": {
+        "AAAAAA+LiberationSans-Bold": {
+          "embedded_bytes": 31208,
+          "format": "ttf"
+        },
+        "BAAAAA+LiberationSans": {
+          "embedded_bytes": 32956,
+          "format": "ttf"
+        }
+      },
+      "tamano_cuerpo_nominal_pt": 11,
+      "tamano_tablas_notas_nominal_pt": 9.5,
+      "tamanos_tablas_extraidos_pt": [
+        9.495
+      ],
+      "encabezado_metadatos_y_pies_pt": 9,
+      "marca_textual_encabezado_pt": 12,
+      "formato": "A4",
+      "margenes_configurados_mm": {
+        "superior": 22,
+        "derecho": 18,
+        "inferior": 20,
+        "izquierdo": 18
+      },
+      "paginas_revisadas_visualmente": [
+        1,
+        2,
+        3
+      ],
+      "recortes_solapamientos_o_celdas_faltantes_detectados": false,
+      "cierre_completo_y_agrupado": true
+    },
+    "prensa": {
+      "pdf": "content/informes-prensa/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/prensa.pdf",
+      "sha256": "54103e698e908c70daa4e25e01bae0d719ec7bef321ca644092c16047d578f65",
+      "bytes": 58042,
+      "paginas": 2,
+      "original": "public/documentos/originales/informe-5-prensa.pdf",
+      "sha256_original": "98b265e0cbdf3d9228b36f2780467dece67af72b915644caa0abcbb65f47e5bd",
+      "tokens_en_orden": 597,
+      "secuencia_completa_identica": true,
+      "bloques_y_celdas_en_orden": 51,
+      "tres_tablas_identicas_celda_por_celda": true,
+      "filas_de_datos": [
+        3,
+        2,
+        4
+      ],
+      "urls_activas_exactas": [
+        "https://buenosairesnoticia.com.ar/nota/9301/a-las-patadas-motochorros-le-robaron-a-un-delivery-en-la-matanza/",
+        "https://eloperativo.com/2026/11/16/lomas-del-mirador/asaltaron-a-un-motociclista-y-le-robaron-su-herramienta-de-trabajo/"
+      ],
+      "todos_los_caracteres_originales_representados": true,
+      "fuentes_incorporadas": {
+        "AAAAAA+LiberationSans-Bold": {
+          "embedded_bytes": 28948,
+          "format": "ttf"
+        },
+        "BAAAAA+LiberationSans": {
+          "embedded_bytes": 32824,
+          "format": "ttf"
+        }
+      },
+      "tamano_cuerpo_nominal_pt": 11,
+      "tamano_tablas_notas_nominal_pt": 9.5,
+      "tamanos_tablas_extraidos_pt": [
+        9.495
+      ],
+      "encabezado_metadatos_y_pies_pt": 9,
+      "marca_textual_encabezado_pt": 12,
+      "formato": "A4",
+      "margenes_configurados_mm": {
+        "superior": 22,
+        "derecho": 18,
+        "inferior": 20,
+        "izquierdo": 18
+      },
+      "paginas_revisadas_visualmente": [
+        1,
+        2
+      ],
+      "recortes_solapamientos_o_celdas_faltantes_detectados": false,
+      "cierre_completo_y_agrupado": true
+    }
+  },
+  "criterio_textual": [
+    "Se excluyen encabezados y pies generados de imprenta.",
+    "Se retiran los pies de paginación originales y un encabezado de tabla repetido por continuación.",
+    "Se unen únicamente líneas y URL partidas, conservando todos los guiones reales.",
+    "Se comprueban todos los bloques y celdas, y su secuencia de tokens completa; no solo frecuencias de caracteres."
+  ],
+  "presentacion": "Web mantiene tres páginas. Prensa usa dos páginas tras compactar espacios verticales y agrupar atribución y advertencia final; no se reducen los tamaños de letra.",
+  "nota_redondeo_pt": "Chromium extrae 10.995/9.495/22.995 para CSS nominales 11/9.5/23; tolerancia de medición de 0.01 pt.",
+  "pendiente": "Falta confirmar y proporcionar el archivo del logo oficial; estas maquetas aún no incorporan su marca de agua."
+}

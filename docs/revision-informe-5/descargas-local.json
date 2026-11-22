@@ -1,0 +1,26 @@
+{
+  "pdf": {
+    "status": 200,
+    "content_type": "application/pdf",
+    "cache_control": "public, max-age=300, must-revalidate",
+    "sha256": "b4e1c2f8db9758218379a962f30a1b7ba65ac750d681985221349f946f5f0505",
+    "bytes": 66487,
+    "same_as_file": true
+  },
+  "prensa": {
+    "status": 200,
+    "content_type": "application/pdf",
+    "cache_control": "public, max-age=300, must-revalidate",
+    "sha256": "54103e698e908c70daa4e25e01bae0d719ec7bef321ca644092c16047d578f65",
+    "bytes": 58042,
+    "same_as_file": true
+  },
+  "original_web": {
+    "sha256": "53ebad4972934bcd252a900ce21ef3add7dbafc9a5cc2e97290dcabdc222f134",
+    "same_as_file": true
+  },
+  "original_prensa": {
+    "sha256": "98b265e0cbdf3d9228b36f2780467dece67af72b915644caa0abcbb65f47e5bd",
+    "same_as_file": true
+  }
+}

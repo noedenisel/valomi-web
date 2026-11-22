@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
   // que solo expone los aprobados; hay que incluirlos en el paquete.
   outputFileTracingIncludes: {
     '/informes/[slug]/pdf': ['./content/informes-pdf/**/*'],
+    '/informes/[slug]/prensa': ['./content/informes-prensa/**/*'],
     '/seguimiento/[slug]/documento': ['./content/seguimiento-docs/**/*'],
     '/observatorio/[slug]/pdf': ['./content/observatorio-pdf/**/*'],
     '/observatorio/[slug]': ['./content/observatorio-datos/**/*'],
