@@ -66,11 +66,7 @@ export default async function PaginaInforme({ params }: Props) {
         <div className="informe-detalle">
           <div className="informe-detalle__lateral">
             <BotonesPdf informe={i} bytes={bytes} />
-            {i.pdfPrensa ? (
-              <p><a href={`/informes/${i.slug}/prensa?archivo=${encodeURIComponent(i.pdfPrensa)}`} download={`VaLoMi-${i.slug}-prensa.pdf`}>Descargar PDF para prensa</a></p>
-            ) : i.numero === 4 && (
-              <p><a href="/documentos/informe-4-prensa.pdf?edicion=contraste-v2" download>Descargar PDF para prensa (misma edición revisada)</a></p>
-            )}
+            {i.numero === 4 && <p><a href="/documentos/informe-4-prensa.pdf?edicion=contraste-v2" download>Descargar PDF para prensa (misma edición revisada)</a></p>}
             {i.resumen && <ResumenRotulado texto={i.resumen} />}
             {i.correcciones.length > 0 && (
               <div className="erratas">
@@ -89,7 +85,11 @@ export default async function PaginaInforme({ params }: Props) {
               <p>{edicionRevisada
                 ? 'La descarga corresponde a la edición revisada con la tabla de contrastación ciudadana, también publicada en esta página.'
                 : 'La descarga corresponde a la edición web del informe, también publicada en esta página.'}</p>
-              <p><a href={`/documentos/originales/informe-${i.numero}-web.pdf`}>{edicionRevisada ? 'Consultar PDF anterior (archivo)' : 'Consultar PDF original recibido (archivo)'}</a></p>
+              {i.numero === 5 ? (
+                <p><a href={`/informes/${i.slug}/pdf?archivo=${encodeURIComponent(i.pdf)}`} download={`VaLoMi-${i.slug}.pdf`}>Descargá el PDF</a></p>
+              ) : (
+                <p><a href={`/documentos/originales/informe-${i.numero}-web.pdf`}>{edicionRevisada ? 'Consultar PDF anterior (archivo)' : 'Consultar PDF original recibido (archivo)'}</a></p>
+              )}
               <p className="original__huella">
                 Huella SHA-256 del PDF descargable:
                 <code>{sha256}</code>

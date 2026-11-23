@@ -1,36 +1,19 @@
 {
-  "checked_utc": "2026-11-22T21:33:02.072185+00:00",
+  "checked_utc": "2026-11-23T08:47:43.552917+00:00",
   "base": "http://localhost:3019",
   "report": 5,
-  "slug": "informe-valomi-n-5-semana-del-16-11-al-22-11-2026",
-  "requests": "GET/HEAD only; no forms, subscriptions, emails or uploads submitted; all browser mutations blocked",
-  "source_html_sha256": "084e5d24d7aff5a3d200bc071908bd9b99947f11f5844aa5db592de423823849",
+  "source_publication_date": "2026-11-22",
+  "correction_review_date": "2026-11-23",
+  "scope": "Revisión local de corrección de dos rótulos y distribución exclusiva del PDF web; GET/HEAD solamente. No se enviaron formularios, suscripciones, reportes, correos ni archivos.",
   "passed": true,
-  "checks_count": 142,
+  "checks_count": 94,
   "failures": [],
-  "screenshots": [
-    "web-1440.png",
-    "web-390.png"
+  "source_reference": "/workspace/work/informe5/web.html con exactamente dos sustituciones de Denuncias vecinales sin confirmar por Reportes de vecinos",
+  "body_and_final_warning_preserved": true,
+  "original_urls_preserved": [
+    "https://eloperativo.com/2026/11/16/lomas-del-mirador/asaltaron-a-un-motociclista-y-le-robaron-su-herramienta-de-trabajo/",
+    "https://buenosairesnoticia.com.ar/nota/9301/a-las-patadas-motochorros-le-robaron-a-un-delivery-en-la-matanza/"
   ],
-  "known_pending": "Logo original exacto no disponible; PDF sin marca de agua, conforme al estado documentado de revisión.",
-  "verified": {
-    "entire_dom_text_and_source_links_exact_in_all_sizes": true,
-    "three_tables_all_cells_exact": true,
-    "table_data_rows": [
-      3,
-      2,
-      4
-    ],
-    "existing_N1_style_retained": true,
-    "home_and_archive_report5_first": true,
-    "archive_reports_count": 5,
-    "report1_to4_text_and_primary_PDF_hashes_unchanged": true,
-    "Seguimiento_identical_to_approved_production_baseline": true,
-    "real_map_Reportar_and_EnvialoSimple_lists1_2_preserved": true,
-    "sitemap_urls": 10,
-    "robots_public_indexation": true,
-    "no_form_submissions_or_emails_or_uploads": true
-  },
   "browser": [
     {
       "width": 1440,
@@ -39,36 +22,26 @@
           "client": 728,
           "scroll": 728,
           "overflowX": "auto",
-          "fontSize": "15.2px",
-          "tabindex": "0",
-          "fits_without_horizontal_scroll": true
+          "tabindex": "0"
         },
         {
           "client": 694,
           "scroll": 694,
           "overflowX": "auto",
-          "fontSize": "15.2px",
-          "tabindex": "0",
-          "fits_without_horizontal_scroll": true
+          "tabindex": "0"
         },
         {
           "client": 728,
           "scroll": 728,
           "overflowX": "auto",
-          "fontSize": "15.2px",
-          "tabindex": "0",
-          "fits_without_horizontal_scroll": true
+          "tabindex": "0"
         }
       ],
-      "article_style": {
-        "fontFamily": "\"Public Sans\", \"Public Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
-        "fontSize": "16.8px",
-        "lineHeight": "26.88px",
-        "color": "rgb(27, 30, 34)"
-      },
       "page_errors": [],
       "console_errors": [],
-      "mutations_blocked": []
+      "blocked_mutations": [],
+      "primary_href": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/pdf?archivo=pdf-diseno.pdf",
+      "secondary_href": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/pdf?archivo=pdf-diseno.pdf"
     },
     {
       "width": 390,
@@ -77,153 +50,70 @@
           "client": 358,
           "scroll": 630,
           "overflowX": "auto",
-          "fontSize": "15.2px",
           "tabindex": "0",
-          "scroll_after_arrow": 34
+          "keyboard_scroll": 29
         },
         {
           "client": 324,
           "scroll": 630,
           "overflowX": "auto",
-          "fontSize": "15.2px",
           "tabindex": "0",
-          "scroll_after_arrow": 29
+          "keyboard_scroll": 31
         },
         {
           "client": 358,
           "scroll": 630,
           "overflowX": "auto",
-          "fontSize": "15.2px",
           "tabindex": "0",
-          "scroll_after_arrow": 31
+          "keyboard_scroll": 31
         }
       ],
-      "article_style": {
-        "fontFamily": "\"Public Sans\", \"Public Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
-        "fontSize": "16.8px",
-        "lineHeight": "26.88px",
-        "color": "rgb(27, 30, 34)"
-      },
       "page_errors": [],
       "console_errors": [],
-      "mutations_blocked": []
-    },
-    {
-      "width": 360,
-      "table_metrics": [
-        {
-          "client": 328,
-          "scroll": 630,
-          "overflowX": "auto",
-          "fontSize": "15.2px",
-          "tabindex": "0",
-          "scroll_after_arrow": 32
-        },
-        {
-          "client": 294,
-          "scroll": 630,
-          "overflowX": "auto",
-          "fontSize": "15.2px",
-          "tabindex": "0",
-          "scroll_after_arrow": 31
-        },
-        {
-          "client": 328,
-          "scroll": 630,
-          "overflowX": "auto",
-          "fontSize": "15.2px",
-          "tabindex": "0",
-          "scroll_after_arrow": 32
-        }
-      ],
-      "article_style": {
-        "fontFamily": "\"Public Sans\", \"Public Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
-        "fontSize": "16.8px",
-        "lineHeight": "26.88px",
-        "color": "rgb(27, 30, 34)"
-      },
-      "page_errors": [],
-      "console_errors": [],
-      "mutations_blocked": []
+      "blocked_mutations": [],
+      "primary_href": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/pdf?archivo=pdf-diseno.pdf",
+      "secondary_href": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/pdf?archivo=pdf-diseno.pdf"
     }
   ],
-  "downloads": [
+  "public_web_pdf": {
+    "path": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/pdf?archivo=pdf-diseno.pdf",
+    "status": 200,
+    "content_type": "application/pdf",
+    "cache_control": "public, max-age=300, must-revalidate",
+    "bytes": 66466,
+    "sha256": "e4ef270ac670adfa66fda98aa55f3aaca796424190846a1ba18468f682e44fea",
+    "label": "botón principal",
+    "pages": 3,
+    "same_as_final_file": true
+  },
+  "secondary_web_download_same_sha": true,
+  "press_N5_retired": [
     {
-      "label": "web",
-      "status": 200,
-      "content_type": "application/pdf",
-      "sha256": "b4e1c2f8db9758218379a962f30a1b7ba65ac750d681985221349f946f5f0505",
-      "bytes": 66487,
-      "pages": 3,
-      "same_as_file": true
+      "path": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/prensa",
+      "status": 404
     },
     {
-      "label": "prensa",
-      "status": 200,
-      "content_type": "application/pdf",
-      "sha256": "54103e698e908c70daa4e25e01bae0d719ec7bef321ca644092c16047d578f65",
-      "bytes": 58042,
-      "pages": 2,
-      "same_as_file": true
+      "path": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/prensa?archivo=prensa.pdf",
+      "status": 404
     },
     {
-      "label": "original_web",
-      "status": 200,
-      "content_type": "application/pdf",
-      "sha256": "53ebad4972934bcd252a900ce21ef3add7dbafc9a5cc2e97290dcabdc222f134",
-      "bytes": 62944,
-      "pages": 2,
-      "same_as_file": true
-    },
-    {
-      "label": "original_prensa",
-      "status": 200,
-      "content_type": "application/pdf",
-      "sha256": "98b265e0cbdf3d9228b36f2780467dece67af72b915644caa0abcbb65f47e5bd",
-      "bytes": 56656,
-      "pages": 2,
-      "same_as_file": true
-    },
-    {
-      "label": "legacy1",
-      "status": 200,
-      "content_type": "application/pdf",
-      "sha256": "5ea1d5d77cd1019071174d26e149afce8390461cf562e06352d362e424b4ca0f",
-      "bytes": 42163
-    },
-    {
-      "label": "legacy2",
-      "status": 200,
-      "content_type": "application/pdf",
-      "sha256": "c728a76ea18cb9300ede894e4e4cf8b67df0f0e0cc13c7047e6be22475b131e1",
-      "bytes": 43596
-    },
-    {
-      "label": "legacy3",
-      "status": 200,
-      "content_type": "application/pdf",
-      "sha256": "5fd6ca9207b677e8e3f81215bdba0e9014b42dceaa064414e4d7771d268aa9f8",
-      "bytes": 32881
-    },
-    {
-      "label": "legacy4",
-      "status": 200,
-      "content_type": "application/pdf",
-      "sha256": "48959ffb69a90b21b7a299cc193bc8b81c88887684180d6bcff2f6ff7155e027",
-      "bytes": 36196
+      "path": "/documentos/originales/informe-5-prensa.pdf",
+      "status": 404
     }
   ],
-  "external_sources": [
-    {
-      "url": "https://eloperativo.com/2026/11/16/lomas-del-mirador/asaltaron-a-un-motociclista-y-le-robaron-su-herramienta-de-trabajo/",
-      "status": 200,
-      "original_URL_preserved": true
-    },
-    {
-      "url": "https://buenosairesnoticia.com.ar/nota/9301/a-las-patadas-motochorros-le-robaron-a-un-delivery-en-la-matanza/",
-      "status": 403,
-      "original_URL_preserved": true
-    }
+  "removed_press_files": [
+    "content/informes-prensa/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/prensa.pdf",
+    "public/documentos/originales/informe-5-prensa.pdf",
+    "editorial/informe-5-prensa.html",
+    "docs/revision-informe-5/prensa-pdf-pagina-1.png"
   ],
-  "external_limit": "Buenos Aires Noticia devuelve HTTP403 a la consulta automatizada; no se sustituyó ni alteró su URL original."
+  "N1_to4_PDFs_intact": true,
+  "N4_historical_press_preserved": true,
+  "existing_CSS_unchanged": true,
+  "sitemap_URL_count": 10,
+  "screenshots": [
+    "web-1440.png",
+    "web-390.png"
+  ],
+  "limits": "Los enlaces de las dos fuentes originales se preservan sin nueva consulta externa; la consulta anterior a Buenos Aires Noticia devolvió403 automatizado. No se afirma haber probado la vista previa protegida de Vercel."
 }
