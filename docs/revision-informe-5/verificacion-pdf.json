@@ -1,0 +1,87 @@
+{
+  "informe": 5,
+  "fecha_revision_utc": "2026-11-23T08:43:01.413791+00:00",
+  "alcance": "Control exclusivo de la versión web frente a su original, aplicando únicamente las dos sustituciones de rótulo autorizadas por el usuario.",
+  "versiones": {
+    "web": {
+      "pdf": "content/informes-pdf/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/pdf-diseno.pdf",
+      "sha256": "e4ef270ac670adfa66fda98aa55f3aaca796424190846a1ba18468f682e44fea",
+      "bytes": 66466,
+      "paginas": 3,
+      "original": "public/documentos/originales/informe-5-web.pdf",
+      "sha256_original": "53ebad4972934bcd252a900ce21ef3add7dbafc9a5cc2e97290dcabdc222f134",
+      "tokens_en_orden": 768,
+      "bloques_y_celdas_en_orden": 61,
+      "tres_tablas_identicas_celda_por_celda": true,
+      "filas_de_datos": [
+        3,
+        2,
+        4
+      ],
+      "urls_activas_exactas": [
+        "https://buenosairesnoticia.com.ar/nota/9301/a-las-patadas-motochorros-le-robaron-a-un-delivery-en-la-matanza/",
+        "https://eloperativo.com/2026/11/16/lomas-del-mirador/asaltaron-a-un-motociclista-y-le-robaron-su-herramienta-de-trabajo/"
+      ],
+      "fuentes_incorporadas": {
+        "AAAAAA+LiberationSans-Bold": {
+          "embedded_bytes": 31208,
+          "format": "ttf"
+        },
+        "BAAAAA+LiberationSans": {
+          "embedded_bytes": 32956,
+          "format": "ttf"
+        }
+      },
+      "tamano_cuerpo_nominal_pt": 11,
+      "tamano_tablas_notas_nominal_pt": 9.5,
+      "tamanos_tablas_extraidos_pt": [
+        9.495
+      ],
+      "encabezado_metadatos_y_pies_pt": 9,
+      "marca_textual_encabezado_pt": 12,
+      "formato": "A4",
+      "margenes_configurados_mm": {
+        "superior": 22,
+        "derecho": 18,
+        "inferior": 20,
+        "izquierdo": 18
+      },
+      "paginas_revisadas_visualmente": [
+        1,
+        2,
+        3
+      ],
+      "recortes_solapamientos_o_celdas_faltantes_detectados": false,
+      "cierre_completo_y_agrupado": true,
+      "secuencia_completa_identica_tras_dos_sustituciones_autorizadas": true,
+      "contenido_integro_salvo_dos_sustituciones_autorizadas": true
+    }
+  },
+  "criterio_textual": [
+    "Se excluyen encabezados y pies generados de imprenta.",
+    "Se retiran únicamente los pies de paginación del original; las tres tablas lógicas se mantienen completas.",
+    "Se unen únicamente líneas y URL partidas, conservando todos los guiones reales.",
+    "Se comprueban todos los bloques y celdas, y su secuencia de tokens completa; no solo frecuencias de caracteres.",
+    "La comparación fuente→HTML→PDF aplica exclusivamente los dos cambios de rótulo identificados; todo el resto debe coincidir en orden."
+  ],
+  "presentacion": "La versión web conserva tres páginas, identidad editorial, cuerpo de 11 pt y tablas de 9.5 pt nominales; todas las páginas se revisaron visualmente sin recortes ni solapamientos.",
+  "nota_redondeo_pt": "Chromium extrae 10.995/9.495/22.995 para CSS nominales 11/9.5/23; tolerancia de medición de 0.01 pt.",
+  "pendiente": "Falta confirmar y proporcionar el archivo del logo oficial; estas maquetas aún no incorporan su marca de agua.",
+  "fecha_documento_original": "2026-11-22",
+  "cambios_autorizados": [
+    {
+      "ubicacion": "Encabezado de la tercera columna de la tabla Dónde",
+      "antes": "Denuncias vecinales sin confirmar",
+      "despues": "Reportes de vecinos"
+    },
+    {
+      "ubicacion": "Inicio de la nota de publicaciones vecinales",
+      "antes": "Denuncias vecinales sin confirmar.",
+      "despues": "Reportes de vecinos."
+    }
+  ],
+  "conservado": [
+    "Son publicaciones de vecinos en redes, no hechos comprobados por la Policía ni por la Justicia.",
+    "Advertencia final completa, cifras, fechas, relatos, fuentes y URL."
+  ]
+}

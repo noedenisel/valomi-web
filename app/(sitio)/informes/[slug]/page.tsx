@@ -50,6 +50,7 @@ export default async function PaginaInforme({ params }: Props) {
 
   const { bytes, sha256 } = await datosPdf(i.slug, i.pdf);
   const html = await versionWeb(i.slug, i.versionWeb);
+  const edicionRevisada = i.numero !== null && i.numero >= 1 && i.numero <= 4;
   return (
     <section className="seccion pagina">
       <div className="contenedor">
@@ -80,9 +81,15 @@ export default async function PaginaInforme({ params }: Props) {
               </div>
             )}
             <div className="original">
-              <h2>Documento revisado</h2>
-              <p>La descarga corresponde a la edición revisada con la tabla de contrastación ciudadana, también publicada en esta página.</p>
-              <p><a href={`/documentos/originales/informe-${i.numero}-web.pdf`}>Consultar PDF anterior (archivo)</a></p>
+              <h2>{edicionRevisada ? 'Documento revisado' : 'Edición web'}</h2>
+              <p>{edicionRevisada
+                ? 'La descarga corresponde a la edición revisada con la tabla de contrastación ciudadana, también publicada en esta página.'
+                : 'La descarga corresponde a la edición web del informe, también publicada en esta página.'}</p>
+              {i.numero === 5 ? (
+                <p><a href={`/informes/${i.slug}/pdf?archivo=${encodeURIComponent(i.pdf)}`} download={`VaLoMi-${i.slug}.pdf`}>Descargá el PDF</a></p>
+              ) : (
+                <p><a href={`/documentos/originales/informe-${i.numero}-web.pdf`}>{edicionRevisada ? 'Consultar PDF anterior (archivo)' : 'Consultar PDF original recibido (archivo)'}</a></p>
+              )}
               <p className="original__huella">
                 Huella SHA-256 del PDF descargable:
                 <code>{sha256}</code>
@@ -91,7 +98,7 @@ export default async function PaginaInforme({ params }: Props) {
           </div>
           {html ? (
             <div id="version-web" className="version-web">
-              <p className="version-web__rotulo">Versión web del informe · edición revisada con contrastación ciudadana</p>
+              <p className="version-web__rotulo">{edicionRevisada ? 'Versión web del informe · edición revisada con contrastación ciudadana' : 'Versión web del informe · edición web'}</p>
               <div dangerouslySetInnerHTML={{ __html: html }} />
             </div>
           ) : (

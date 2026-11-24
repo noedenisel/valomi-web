@@ -1,0 +1,119 @@
+{
+  "checked_utc": "2026-11-23T08:47:43.552917+00:00",
+  "base": "http://localhost:3019",
+  "report": 5,
+  "source_publication_date": "2026-11-22",
+  "correction_review_date": "2026-11-23",
+  "scope": "Revisión local de corrección de dos rótulos y distribución exclusiva del PDF web; GET/HEAD solamente. No se enviaron formularios, suscripciones, reportes, correos ni archivos.",
+  "passed": true,
+  "checks_count": 94,
+  "failures": [],
+  "source_reference": "/workspace/work/informe5/web.html con exactamente dos sustituciones de Denuncias vecinales sin confirmar por Reportes de vecinos",
+  "body_and_final_warning_preserved": true,
+  "original_urls_preserved": [
+    "https://eloperativo.com/2026/11/16/lomas-del-mirador/asaltaron-a-un-motociclista-y-le-robaron-su-herramienta-de-trabajo/",
+    "https://buenosairesnoticia.com.ar/nota/9301/a-las-patadas-motochorros-le-robaron-a-un-delivery-en-la-matanza/"
+  ],
+  "browser": [
+    {
+      "width": 1440,
+      "table_metrics": [
+        {
+          "client": 728,
+          "scroll": 728,
+          "overflowX": "auto",
+          "tabindex": "0"
+        },
+        {
+          "client": 694,
+          "scroll": 694,
+          "overflowX": "auto",
+          "tabindex": "0"
+        },
+        {
+          "client": 728,
+          "scroll": 728,
+          "overflowX": "auto",
+          "tabindex": "0"
+        }
+      ],
+      "page_errors": [],
+      "console_errors": [],
+      "blocked_mutations": [],
+      "primary_href": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/pdf?archivo=pdf-diseno.pdf",
+      "secondary_href": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/pdf?archivo=pdf-diseno.pdf"
+    },
+    {
+      "width": 390,
+      "table_metrics": [
+        {
+          "client": 358,
+          "scroll": 630,
+          "overflowX": "auto",
+          "tabindex": "0",
+          "keyboard_scroll": 29
+        },
+        {
+          "client": 324,
+          "scroll": 630,
+          "overflowX": "auto",
+          "tabindex": "0",
+          "keyboard_scroll": 31
+        },
+        {
+          "client": 358,
+          "scroll": 630,
+          "overflowX": "auto",
+          "tabindex": "0",
+          "keyboard_scroll": 31
+        }
+      ],
+      "page_errors": [],
+      "console_errors": [],
+      "blocked_mutations": [],
+      "primary_href": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/pdf?archivo=pdf-diseno.pdf",
+      "secondary_href": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/pdf?archivo=pdf-diseno.pdf"
+    }
+  ],
+  "public_web_pdf": {
+    "path": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/pdf?archivo=pdf-diseno.pdf",
+    "status": 200,
+    "content_type": "application/pdf",
+    "cache_control": "public, max-age=300, must-revalidate",
+    "bytes": 66466,
+    "sha256": "e4ef270ac670adfa66fda98aa55f3aaca796424190846a1ba18468f682e44fea",
+    "label": "botón principal",
+    "pages": 3,
+    "same_as_final_file": true
+  },
+  "secondary_web_download_same_sha": true,
+  "press_N5_retired": [
+    {
+      "path": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/prensa",
+      "status": 404
+    },
+    {
+      "path": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/prensa?archivo=prensa.pdf",
+      "status": 404
+    },
+    {
+      "path": "/documentos/originales/informe-5-prensa.pdf",
+      "status": 404
+    }
+  ],
+  "removed_press_files": [
+    "content/informes-prensa/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/prensa.pdf",
+    "public/documentos/originales/informe-5-prensa.pdf",
+    "editorial/informe-5-prensa.html",
+    "docs/revision-informe-5/prensa-pdf-pagina-1.png"
+  ],
+  "N1_to4_PDFs_intact": true,
+  "N4_historical_press_preserved": true,
+  "existing_CSS_unchanged": true,
+  "sitemap_URL_count": 10,
+  "screenshots": [
+    "web-1440.png",
+    "web-390.png"
+  ],
+  "limits": "Los enlaces de las dos fuentes originales se preservan sin nueva consulta externa; la consulta anterior a Buenos Aires Noticia devolvió403 automatizado. No se afirma haber probado la vista previa protegida de Vercel."
+}

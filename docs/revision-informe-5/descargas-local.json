@@ -1,0 +1,38 @@
+{
+  "checked_at_utc": "2026-11-23T08:43:01.764724+00:00",
+  "base": "http://localhost:3019",
+  "requests": "GET only; no emails or forms submitted",
+  "results": [
+    {
+      "path": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/pdf?archivo=pdf-diseno.pdf",
+      "status": 200,
+      "expected_status": 200,
+      "content_type": "application/pdf",
+      "passed": true,
+      "sha256": "e4ef270ac670adfa66fda98aa55f3aaca796424190846a1ba18468f682e44fea",
+      "same_as_file": true
+    },
+    {
+      "path": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/prensa",
+      "status": 404,
+      "expected_status": 404,
+      "content_type": "text/html; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "/informes/informe-valomi-n-5-semana-del-16-11-al-22-11-2026/prensa?archivo=prensa.pdf",
+      "status": 404,
+      "expected_status": 404,
+      "content_type": "text/html; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "/documentos/originales/informe-5-prensa.pdf",
+      "status": 404,
+      "expected_status": 404,
+      "content_type": "text/html; charset=utf-8",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
